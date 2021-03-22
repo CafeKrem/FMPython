@@ -1,5 +1,5 @@
 tests
-testLiteralString
+testLiteralInteger
 	smaccPythonModel := self parsePythonString: '100'.
 	fmPython := smaccPythonVisitor visit: smaccPythonModel.
 	self assert: fmPython statements size equals: 1.
