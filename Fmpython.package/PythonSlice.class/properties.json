@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonSubscriptionIndex",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#lower => FMOne type: #PythonExpression opposite: #slice",
+		"#upper => FMOne type: #PythonExpression opposite: #slice",
+		"#step => FMOne type: #PythonExpression opposite: #slice"
+	],
+	"name" : "PythonSlice",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#items => FMMany type: #PythonJoinedStringItem opposite: #joinedStr"
+	],
+	"name" : "PythonJoinedStr",
+	"type" : "normal"
+}

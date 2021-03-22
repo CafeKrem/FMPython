@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "PythonJoinedStringItem classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#expression => FMOne type: #PythonExpression opposite: #formattedValue"
+	],
+	"name" : "PythonFormattedValue",
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"traitcomposition" : "PythonJoinedStringItem",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

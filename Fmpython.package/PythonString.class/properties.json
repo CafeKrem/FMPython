@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "PythonJoinedStringItem classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#value => FMProperty"
+	],
+	"name" : "PythonString",
+	"commentStamp" : "",
+	"super" : "PythonLiteral",
+	"traitcomposition" : "PythonJoinedStringItem",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "PythonAssignedTarget classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#contents => FMMany type: #PythonExpression opposite: #tuple"
+	],
+	"name" : "PythonTuple",
+	"commentStamp" : "",
+	"super" : "PythonCollection",
+	"traitcomposition" : "PythonAssignedTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

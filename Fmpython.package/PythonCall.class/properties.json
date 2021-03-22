@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#callee => FMProperty",
+		"#left => FMOne type: #PythonExpression opposite: #call",
+		"#arguments => FMMany type: #PythonExpression opposite: #call"
+	],
+	"name" : "PythonCall",
+	"type" : "normal"
+}

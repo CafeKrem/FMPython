@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#left => FMOne type: #PythonExpression opposite: #binOp",
+		"#right => FMOne type: #PythonExpression opposite: #binOp",
+		"#op => FMOne type: #PythonOperationSymbol opposite: #binOp"
+	],
+	"name" : "PythonBinOp",
+	"type" : "normal"
+}

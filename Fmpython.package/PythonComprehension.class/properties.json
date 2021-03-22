@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#target => FMOne type: #PythonExpression opposite: #parentTarget",
+		"#iterable => FMOne type: #PythonExpression opposite: #parentComprehensionIterable",
+		"#ifs => FMMany type: #PythonExpression opposite: #parentIfs",
+		"#scope => FMOne type: #PythonScope opposite: #comprehension",
+		"#comprehensionExpression => FMOne type: #PythonComprehensionExpression opposite: #comprehension"
+	],
+	"name" : "PythonComprehension",
+	"type" : "normal"
+}

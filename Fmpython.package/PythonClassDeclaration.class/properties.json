@@ -1,0 +1,17 @@
+{
+	"classtraitcomposition" : "PythonDeclaration classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#body => FMMany type: #PythonStatement opposite: #classDeclaration",
+		"#sclass => FMOne type: #PythonSClass opposite: #classDeclaration",
+		"#superClasses => FMMany type: #PythonVarRef opposite: #classDeclaration"
+	],
+	"name" : "PythonClassDeclaration",
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"traitcomposition" : "PythonDeclaration",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

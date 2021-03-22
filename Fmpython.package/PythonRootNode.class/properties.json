@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#statements => FMMany type: #PythonStatement opposite: #rootNode"
+	],
+	"name" : "PythonRootNode",
+	"type" : "normal"
+}

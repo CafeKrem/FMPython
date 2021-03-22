@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonLiteral",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PythonBoolean",
+	"type" : "normal"
+}

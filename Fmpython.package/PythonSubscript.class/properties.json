@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "PythonAssignedTarget classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#index => FMOne type: #PythonSubscriptionIndex opposite: #parentSubscription",
+		"#value => FMOne type: #PythonExpression opposite: #subscript"
+	],
+	"name" : "PythonSubscript",
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"traitcomposition" : "PythonAssignedTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

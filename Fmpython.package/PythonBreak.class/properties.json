@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PythonBreak",
+	"type" : "normal"
+}

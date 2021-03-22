@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonLiteral",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#value => FMProperty"
+	],
+	"name" : "PythonInteger",
+	"type" : "normal"
+}

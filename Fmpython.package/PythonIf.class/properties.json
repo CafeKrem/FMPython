@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#body => FMMany type: #PythonStatement opposite: #parentIfBody",
+		"#else => FMMany type: #PythonStatement opposite: #parentElse",
+		"#elif => FMOne type: #PythonIf opposite: #if",
+		"#if => FMOne type: #PythonIf opposite: #elif",
+		"#cond => FMOne type: #PythonExpression opposite: #if"
+	],
+	"name" : "PythonIf",
+	"type" : "normal"
+}

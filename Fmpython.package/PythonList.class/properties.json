@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonCollection",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#contents => FMMany type: #PythonExpression opposite: #list"
+	],
+	"name" : "PythonList",
+	"type" : "normal"
+}

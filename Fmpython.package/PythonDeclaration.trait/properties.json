@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "Fmpython-Traits",
+	"instvars" : [
+		"#name => FMProperty",
+		"#scope => FMOne type: #PythonScope opposite: #declarations",
+		"#references => FMMany type: #PythonVarRef opposite: #definition"
+	],
+	"name" : "PythonDeclaration"
+}

@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "PythonAssignedTarget classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#attributeName => FMProperty",
+		"#left => FMOne type: #PythonExpression opposite: #attributeNav"
+	],
+	"name" : "PythonAttributeNav",
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"traitcomposition" : "PythonAssignedTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

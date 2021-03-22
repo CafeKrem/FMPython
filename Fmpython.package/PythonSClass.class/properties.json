@@ -1,0 +1,21 @@
+{
+	"classtraitcomposition" : "PythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#classScope => FMOne type: #PythonScope opposite: #sClass",
+		"#declaration => FMOne type: #PythonClassDeclaration opposite: #sClass",
+		"#instanceScope => FMOne type: #PythonScope opposite: #sClass",
+		"#name => FMProperty",
+		"#statements => FMMany type: #PythonStatement opposite: #sClass",
+		"#subClasses => FMMany type: #PythonSClass opposite: #superClasses",
+		"#superClasses => FMMany type: #PythonSClass opposite: #subClasses"
+	],
+	"name" : "PythonSClass",
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"traitcomposition" : "PythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

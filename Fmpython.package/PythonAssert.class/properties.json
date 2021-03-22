@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#conditional => FMOne type: #PythonExpression opposite: #assert",
+		"#message => FMOne type: #PythonExpression opposite: #assert"
+	],
+	"name" : "PythonAssert",
+	"type" : "normal"
+}

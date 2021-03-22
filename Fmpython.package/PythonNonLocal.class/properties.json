@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#varRef => FMOne type: #PythonVarRef opposite: #nonLocal"
+	],
+	"name" : "PythonNonLocal",
+	"type" : "normal"
+}

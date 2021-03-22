@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#sPackage => FMOne type: #PythonSPackage opposite: #modules",
+		"#classes => FMMany type: #PythonSClass opposite: #sModule",
+		"#statements => FMMany type: #PythonStatement opposite: #sModule",
+		"#classImported => FMMany type: #PythonSClass opposite: #sModule",
+		"#fuctionImported => FMMany type: #PythonSFunction opposite: #sModule",
+		"#scope => FMOne type: #PythonScope opposite: #sModule"
+	],
+	"name" : "PythonSModule",
+	"type" : "normal"
+}

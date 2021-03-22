@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#cond => FMOne type: #PythonExpression opposite: #while",
+		"#body => FMMany type: #PythonStatement opposite: #while"
+	],
+	"name" : "PythonWhile",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#body => FMMany type: #PythonStatement opposite: #try",
+		"#finaly => FMMany type: #PythonStatement opposite: #try",
+		"#exceptHandlers => FMMany type: #PythonExceptionHandler opposite: #try"
+	],
+	"name" : "PythonTry",
+	"type" : "normal"
+}

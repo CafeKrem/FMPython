@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#returnValue => FMOne type: #PythonExpression opposite: #return"
+	],
+	"name" : "PythonReturn",
+	"type" : "normal"
+}

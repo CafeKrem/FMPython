@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "Fmpython-Traits",
+	"instvars" : [
+		"#parentAssign => FMOne type: #PythonAssign opposite: #left"
+	],
+	"name" : "PythonAssignedTarget"
+}

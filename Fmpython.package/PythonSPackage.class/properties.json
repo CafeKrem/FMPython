@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#modules => FMMany type: #PythonSModule opposite: #sPackage",
+		"#subPackage => FMMany type: #PythonSPackage opposite: #sPackage",
+		"#sPackage => FMOne type: #PythonSPackage opposite: #subPackage"
+	],
+	"name" : "PythonSPackage",
+	"type" : "normal"
+}

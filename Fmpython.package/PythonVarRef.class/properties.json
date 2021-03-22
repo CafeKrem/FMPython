@@ -1,0 +1,20 @@
+{
+	"classtraitcomposition" : "PythonAssignedTarget classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#definition => FMOne type: #PythonDeclaration opposite: #references",
+		"#exceptionAssociation => FMOne type: #PythonExceptionAssociation opposite: #allias",
+		"#global => FMOne type: #PythonGlobal opposite: #varRef",
+		"#nonLocal => FMOne type: #PythonNonLocal opposite: #varRef",
+		"#for => FMOne type: #PythonFor opposite: #iterationVar",
+		"#classDeclaration => FMOne type: #PythonClassDeclaration opposite: #superClasses"
+	],
+	"name" : "PythonVarRef",
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"traitcomposition" : "PythonAssignedTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

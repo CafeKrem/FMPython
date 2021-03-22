@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#left => FMOne type: #PythonAssignedTarget opposite: #parentAssign",
+		"#expr => FMOne type: #PythonExpression opposite: #assign"
+	],
+	"name" : "PythonAssign",
+	"type" : "normal"
+}

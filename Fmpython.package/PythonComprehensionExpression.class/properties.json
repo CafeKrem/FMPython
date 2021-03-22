@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonLiteral",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#comprehension => FMOne type: #PythonComprehension opposite: #comprehensionExpression",
+		"#elt => FMOne type: #PythonExpression opposite: #comprehensionExpression"
+	],
+	"name" : "PythonComprehensionExpression",
+	"type" : "normal"
+}

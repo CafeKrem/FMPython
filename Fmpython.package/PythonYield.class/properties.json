@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#expression => FMOne type: #PythonExpression opposite: #yield"
+	],
+	"name" : "PythonYield",
+	"type" : "normal"
+}

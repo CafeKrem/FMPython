@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#parentSubscription => FMOne type: #PythonSubscript opposite: #index"
+	],
+	"name" : "PythonSubscriptionIndex",
+	"type" : "normal"
+}

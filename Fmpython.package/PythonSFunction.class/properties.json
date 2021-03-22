@@ -1,0 +1,20 @@
+{
+	"classtraitcomposition" : "PythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#declaration => FMOne type: #PythonFunctionDeclaration opposite: #sfunction",
+		"#decorateurs => FMMany type: #PythonExpression opposite: #sFunction",
+		"#isClassSide => FMProperty",
+		"#name => FMProperty",
+		"#scope => FMOne type: #PythonScope opposite: #sFunction",
+		"#statements => FMMany type: #PythonStatement opposite: #sFunction"
+	],
+	"name" : "PythonSFunction",
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"traitcomposition" : "PythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

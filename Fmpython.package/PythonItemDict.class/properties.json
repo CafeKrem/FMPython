@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#key => FMOne type: #PythonExpression opposite: #itemDict",
+		"#value => FMOne type: #PythonExpression opposite: #itemDict",
+		"#dict => FMOne type: #PythonDict opposite: #itemsDict"
+	],
+	"name" : "PythonItemDict",
+	"type" : "normal"
+}

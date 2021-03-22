@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#contextExpression => FMOne type: #PythonExpression opposite: #withItem",
+		"#target => FMOne type: #PythonExpression opposite: #withItem",
+		"#with => FMOne type: #PythonWith opposite: #withItems"
+	],
+	"name" : "PythonWithItem",
+	"type" : "normal"
+}

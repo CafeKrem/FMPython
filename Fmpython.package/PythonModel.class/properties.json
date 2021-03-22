@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MooseModel",
+	"category" : "Fmpython-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PythonModel",
+	"type" : "normal"
+}

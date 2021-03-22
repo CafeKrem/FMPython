@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#description => FMProperty",
+		"#exceptionAssociation => FMOne type: #PythonExceptionAssociation opposite: #exception",
+		"#raise => FMOne type: #PythonRaise opposite: #exception"
+	],
+	"name" : "PythonException",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "PythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#withItems => FMMany type: #PythonWithItem opposite: #with",
+		"#scope => FMOne type: #PythonScope opposite: #with"
+	],
+	"name" : "PythonWith",
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"traitcomposition" : "PythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

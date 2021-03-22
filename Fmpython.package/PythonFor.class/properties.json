@@ -1,0 +1,19 @@
+{
+	"classtraitcomposition" : "PythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#orelse => FMMany type: #PythonStatement opposite: #parentOrelse",
+		"#body => FMMany type: #PythonStatement opposite: #parentForBody",
+		"#iterable => FMOne type: #PythonExpression opposite: #parentForIterable",
+		"#iterationVar => FMOne type: #PythonVarRef opposite: #for",
+		"#scope => FMOne type: #PythonScope opposite: #for"
+	],
+	"name" : "PythonFor",
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"traitcomposition" : "PythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}

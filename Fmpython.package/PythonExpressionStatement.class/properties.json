@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonStatement",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#expr => FMOne type: #PythonExpression opposite: #expressionStatement"
+	],
+	"name" : "PythonExpressionStatement",
+	"type" : "normal"
+}

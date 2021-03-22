@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#expr => FMOne type: #PythonExpression opposite: #unOp",
+		"#op => FMOne type: #PythonOperationSymbol opposite: #unOp"
+	],
+	"name" : "PythonUnOp",
+	"type" : "normal"
+}

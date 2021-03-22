@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonComprehensionExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PythonComprehensionDict",
+	"type" : "normal"
+}

@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#id => FMProperty",
+		"#sModule => FMOne type: #PythonSModule opposite: #scope",
+		"#subScope => FMMany type: #PythonScope opposite: #parentScope",
+		"#parentScope => FMOne type: #PythonScope opposite: #subScope",
+		"#declarations => FMMany type: #PythonDeclaration opposite: #scope",
+		"#comprehension => FMOne type: #PythonComprehension opposite: #scope",
+		"#for => FMOne type: #PythonFor opposite: #scope",
+		"#sFunction => FMOne type: #PythonSFunction opposite: #scope",
+		"#sClass => FMOne type: #PythonSClass opposite: #classScope",
+		"#with => FMOne type: #PythonWith opposite: #scope"
+	],
+	"name" : "PythonScope",
+	"type" : "normal"
+}

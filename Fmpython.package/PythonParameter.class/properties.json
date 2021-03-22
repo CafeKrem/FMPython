@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#functionDeclaration => FMOne type: #PythonFunctionDeclaration opposite: #parameters"
+	],
+	"name" : "PythonParameter",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#body => FMOne type: #PythonExpression opposite: #lambda"
+	],
+	"name" : "PythonLambda",
+	"type" : "normal"
+}

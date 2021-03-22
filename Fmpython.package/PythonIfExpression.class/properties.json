@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PythonExpression",
+	"category" : "Fmpython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#else => FMOne type: #PythonExpression opposite: #ifExpression",
+		"#body => FMOne type: #PythonExpression opposite: #ifExpression",
+		"#cond => FMOne type: #PythonExpression opposite: #ifExpression"
+	],
+	"name" : "PythonIfExpression",
+	"type" : "normal"
+}

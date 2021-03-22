@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PythonToPharoTranscompiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootModel"
+	],
+	"name" : "PTPPythonSmaccExporterToFMPython",
+	"type" : "normal"
+}

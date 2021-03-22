@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PythonDeclaration classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PythonVarDeclaration",
+	"commentStamp" : "",
+	"super" : "PythonEntity",
+	"traitcomposition" : "PythonDeclaration",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Fmpython-Entities"
+}
