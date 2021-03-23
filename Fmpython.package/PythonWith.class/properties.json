@@ -2,8 +2,8 @@
 	"classtraitcomposition" : "PythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#withItems => FMMany type: #PythonWithItem opposite: #with",
-		"#scope => FMOne type: #PythonScope opposite: #with"
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
+		"#withItems => FMMany type: #PythonWithItem opposite: #with"
 	],
 	"name" : "PythonWith",
 	"commentStamp" : "",

@@ -12,7 +12,7 @@ defineRelations
    (sModule property: #statements)  <>-* (statement property: #sModule).
    (sModule property: #classImported)  -* (sClass property: #sModule).
    (sModule property: #fuctionImported)  -* (sFunction property: #sModule).
-   (sModule property: #scope)  <>- (scope property: #sModule).
+   (sModule property: #scope)  <>- (scope property: #scopeOwner).
    (itemDict property: #key)  <>- (expression property: #itemDict).
    (itemDict property: #value)  <>- (expression property: #itemDict).
    (assignedTarget property: #parentAssign)  -<> (assign property: #left).
@@ -20,11 +20,16 @@ defineRelations
    (exceptionHandler property: #exceptionAssociations)  -* (exceptionAssociation property: #exceptionHandler).
    (scope property: #subScope)  -* (scope property: #parentScope).
    (scope property: #declarations)  <>-* (declaration property: #scope).
+   (scope property: #scopeOwner)  -<> (sFunction property: #scope).
+   (scope property: #scopeOwner)  -<> (sClass property: #classScope).
+   (scope property: #scopeOwner)  -<> (sClass property: #instanceScope).
+   (scope property: #scopeOwner)  -<> (for property: #scope).
+   (scope property: #scopeOwner)  -<> (comprehension property: #scope).
+   (scope property: #scopeOwner)  -<> (with property: #scope).
    (declaration property: #references)  -* (varRef property: #definition).
    (comprehension property: #target)  <>- (expression property: #parentTarget).
    (comprehension property: #iterable)  <>- (expression property: #parentComprehensionIterable).
    (comprehension property: #ifs)  <>-* (expression property: #parentIfs).
-   (comprehension property: #scope)  <>- (scope property: #comprehension).
    (withItem property: #contextExpression)  <>- (expression property: #withItem).
    (withItem property: #target)  <>- (expression property: #withItem).
    (rootNode property: #statements)  <>-* (statement property: #rootNode).
@@ -54,7 +59,6 @@ defineRelations
    (global property: #varRef)  <>- (varRef property: #global).
    (nonLocal property: #varRef)  <>- (varRef property: #nonLocal).
    (for property: #iterationVar)  <>- (varRef property: #for).
-   (for property: #scope)  <>- (scope property: #for).
    (binOp property: #left)  <>- (expression property: #binOp).
    (binOp property: #right)  <>- (expression property: #binOp).
    (binOp property: #op)  - (operationSymbol property: #binOp).
@@ -64,19 +68,15 @@ defineRelations
    (ifExpression property: #body)  <>- (expression property: #ifExpression).
    (ifExpression property: #cond)  <>- (expression property: #ifExpression).
    (sFunction property: #statements)  <>-* (statement property: #sFunction).
-   (sFunction property: #scope)  <>- (scope property: #sFunction).
    (sFunction property: #decorateurs)  <>-* (expression property: #sFunction).
    (sFunction property: #declaration)  - (functionDeclaration property: #sfunction).
    (sClass property: #statements)  <>-* (statement property: #sClass).
-   (sClass property: #classScope)  <>- (scope property: #sClass).
    (sClass property: #superClasses)  *-* (sClass property: #subClasses).
-   (sClass property: #instanceScope)  <>- (scope property: #sClass).
    (sClass property: #declaration)  - (classDeclaration property: #sClass).
    (lambda property: #body)  <>- (expression property: #lambda).
    (call property: #left)  <>- (expression property: #call).
    (call property: #arguments)  <>-* (expression property: #call).
    (with property: #withItems)  <>-* (withItem property: #with).
-   (with property: #scope)  <>- (scope property: #with).
    (starred property: #expr)  <>- (expression property: #starred).
    (joinedStr property: #items)  <>-* (joinedStringItem property: #joinedStr).
    (classDeclaration property: #body)  <>-* (statement property: #classDeclaration).

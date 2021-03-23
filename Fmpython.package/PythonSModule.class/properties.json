@@ -6,13 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"#classImported => FMMany type: #PythonSClass opposite: #sModule",
+		"#classes => FMMany type: #PythonSClass opposite: #sModule",
+		"#fuctionImported => FMMany type: #PythonSFunction opposite: #sModule",
 		"#name => FMProperty",
 		"#sPackage => FMOne type: #PythonSPackage opposite: #modules",
-		"#classes => FMMany type: #PythonSClass opposite: #sModule",
-		"#statements => FMMany type: #PythonStatement opposite: #sModule",
-		"#classImported => FMMany type: #PythonSClass opposite: #sModule",
-		"#fuctionImported => FMMany type: #PythonSFunction opposite: #sModule",
-		"#scope => FMOne type: #PythonScope opposite: #sModule"
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
+		"#statements => FMMany type: #PythonStatement opposite: #sModule"
 	],
 	"name" : "PythonSModule",
 	"type" : "normal"
