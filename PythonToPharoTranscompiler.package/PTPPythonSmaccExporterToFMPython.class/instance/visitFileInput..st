@@ -1,7 +1,12 @@
 visiting
 visitFileInput: aFileInput
-	rootModel := PythonRootNode new.
-	aFileInput statements
-		do:
-			[ :eachStatement | rootModel addStatement: (eachStatement acceptVisitor: self) ].
-	^ rootModel
+	| module scope |
+	scope := PythonScope new.
+	module := PythonSModule new.
+	module scope: scope.
+	scope scopeOwner: module.
+	module
+		statements:
+			(aFileInput statements
+				collect: [ :eachStatement | eachStatement acceptVisitor: self ]).
+	^ module
