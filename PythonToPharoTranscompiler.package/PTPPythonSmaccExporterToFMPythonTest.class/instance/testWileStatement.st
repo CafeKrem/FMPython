@@ -1,5 +1,5 @@
 tests
-testLiteralWileStatement
+testWileStatement
 	| while |
 	smaccPythonModel := self parsePythonString: self whileStatementPython.
 	fmPython := smaccPythonVisitor visit: smaccPythonModel.

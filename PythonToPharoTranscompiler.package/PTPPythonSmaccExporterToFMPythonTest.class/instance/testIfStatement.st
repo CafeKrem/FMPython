@@ -1,5 +1,5 @@
 tests
-testLiteralIfStatement
+testIfStatement
 	| if |
 	self skip.
 	self flag: 'Modifier la gramaire'.
