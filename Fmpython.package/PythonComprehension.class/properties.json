@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#comprehensionExpression => FMOne type: #PythonComprehensionExpression opposite: #comprehension",
-		"#ifs => FMMany type: #PythonExpression opposite: #parentIfs",
-		"#iterable => FMOne type: #PythonExpression opposite: #parentComprehensionIterable",
 		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
-		"#target => FMOne type: #PythonExpression opposite: #parentTarget"
+		"#target => FMOne type: #PythonExpression opposite: #parentTarget",
+		"#iterable => FMOne type: #PythonExpression opposite: #parentComprehensionIterable",
+		"#ifs => FMMany type: #PythonExpression opposite: #parentIfs",
+		"#comprehensionExpression => FMOne type: #PythonComprehensionExpression opposite: #comprehension"
 	],
 	"name" : "PythonComprehension",
 	"type" : "normal"

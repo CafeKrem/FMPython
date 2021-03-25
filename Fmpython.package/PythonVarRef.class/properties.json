@@ -2,13 +2,13 @@
 	"classtraitcomposition" : "PythonAssignedTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#classDeclaration => FMOne type: #PythonClassDeclaration opposite: #superClasses",
+		"#name => FMProperty",
 		"#definition => FMOne type: #PythonDeclaration opposite: #references",
 		"#exceptionAssociation => FMOne type: #PythonExceptionAssociation opposite: #allias",
-		"#for => FMOne type: #PythonFor opposite: #iterationVar",
 		"#global => FMOne type: #PythonGlobal opposite: #varRef",
-		"#name => FMProperty",
-		"#nonLocal => FMOne type: #PythonNonLocal opposite: #varRef"
+		"#nonLocal => FMOne type: #PythonNonLocal opposite: #varRef",
+		"#for => FMOne type: #PythonFor opposite: #iterationVar",
+		"#classDeclaration => FMOne type: #PythonClassDeclaration opposite: #superClasses"
 	],
 	"name" : "PythonVarRef",
 	"commentStamp" : "",

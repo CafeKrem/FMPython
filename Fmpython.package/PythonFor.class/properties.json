@@ -2,11 +2,11 @@
 	"classtraitcomposition" : "PythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#body => FMMany type: #PythonStatement opposite: #parentForBody",
-		"#iterable => FMOne type: #PythonExpression opposite: #parentForIterable",
-		"#iterationVar => FMOne type: #PythonVarRef opposite: #for",
 		"#orelse => FMMany type: #PythonStatement opposite: #parentOrelse",
-		"#scope => FMOne type: #PythonScope opposite: #scopeOwner"
+		"#body => FMMany type: #PythonStatement opposite: #parentForBody",
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
+		"#iterable => FMOne type: #PythonExpression opposite: #parentForIterable",
+		"#iterationVar => FMOne type: #PythonVarRef opposite: #for"
 	],
 	"name" : "PythonFor",
 	"commentStamp" : "",

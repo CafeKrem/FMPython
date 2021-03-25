@@ -1,6 +1,6 @@
 accessing
 cond
-	"Relation named: #cond type: #PythonExpression opposite: #if"
+	"Relation named: #cond type: #PythonExpression opposite: #ifOwner"
 
 	<generated>
 	^ cond

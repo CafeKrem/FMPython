@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #SubscriptionIndex super: #PythonEntity>
+	<FMClass: #SubscriptionIndex super: #Object>
 	<package: #Fmpython>
 	<generated>
 	^self

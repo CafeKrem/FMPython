@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #Expression super: #PythonSubscriptionIndex>
+	<FMClass: #Expression super: #PythonEntity>
 	<package: #Fmpython>
 	<generated>
 	^self

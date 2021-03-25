@@ -37,8 +37,8 @@ defineRelations
    (exceptionAssociation property: #exception)  - (exception property: #exceptionAssociation).
    (exceptionAssociation property: #allias)  - (varRef property: #exceptionAssociation).
    (return property: #returnValue)  <>- (expression property: #return).
-   (if property: #elif)  <>- (if property: #if).
-   (if property: #cond)  <>- (expression property: #if).
+   (if property: #elif)  *- (if property: #ifParent).
+   (if property: #cond)  <>- (expression property: #ifOwner).
    (while property: #cond)  <>- (expression property: #while).
    (while property: #body)  <>-* (statement property: #while).
    (expressionStatement property: #expr)  <>- (expression property: #expressionStatement).

@@ -6,19 +6,19 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#classDeclaration => FMOne type: #PythonClassDeclaration opposite: #body",
-		"#exceptionHandler => FMOne type: #PythonExceptionHandler opposite: #exceptionActions",
-		"#functionDeclaration => FMOne type: #PythonFunctionDeclaration opposite: #body",
-		"#parentElse => FMOne type: #PythonIf opposite: #else",
-		"#parentForBody => FMOne type: #PythonFor opposite: #body",
 		"#parentIfBody => FMOne type: #PythonIf opposite: #body",
+		"#parentElse => FMOne type: #PythonIf opposite: #else",
 		"#parentOrelse => FMOne type: #PythonFor opposite: #orelse",
-		"#rootNode => FMOne type: #PythonRootNode opposite: #statements",
-		"#sClass => FMOne type: #PythonSClass opposite: #statements",
-		"#sFunction => FMOne type: #PythonSFunction opposite: #statements",
+		"#parentForBody => FMOne type: #PythonFor opposite: #body",
 		"#sModule => FMOne type: #PythonSModule opposite: #statements",
+		"#exceptionHandler => FMOne type: #PythonExceptionHandler opposite: #exceptionActions",
+		"#rootNode => FMOne type: #PythonRootNode opposite: #statements",
+		"#while => FMOne type: #PythonWhile opposite: #body",
 		"#try => FMOne type: #PythonTry opposite: #body",
-		"#while => FMOne type: #PythonWhile opposite: #body"
+		"#sFunction => FMOne type: #PythonSFunction opposite: #statements",
+		"#sClass => FMOne type: #PythonSClass opposite: #statements",
+		"#classDeclaration => FMOne type: #PythonClassDeclaration opposite: #body",
+		"#functionDeclaration => FMOne type: #PythonFunctionDeclaration opposite: #body"
 	],
 	"name" : "PythonStatement",
 	"type" : "normal"

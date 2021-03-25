@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "Fmpython-Traits",
+	"instvars" : [
+		"#parentSubscription => FMOne type: #PythonSubscript opposite: #index"
+	],
+	"name" : "PythonSubscriptionIndex"
+}
