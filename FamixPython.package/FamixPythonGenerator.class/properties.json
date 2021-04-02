@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "FamixMetamodelGenerator",
+	"category" : "Famixpython",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sPackage",
+		"sModule",
+		"operationSymbol",
+		"exception",
+		"scope",
+		"declaration",
+		"asynchronable",
+		"parameter",
+		"expression",
+		"sFunction",
+		"sClass"
+	],
+	"name" : "FamixPythonGenerator",
+	"type" : "normal"
+}

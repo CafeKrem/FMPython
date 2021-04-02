@@ -1,0 +1,20 @@
+{
+	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#sModule => FMOne type: #FMXPythonSModule opposite: #classes",
+		"#classScope => FMOne type: #FMXPythonScope opposite: #scopeOwner",
+		"#instanceScope => FMOne type: #FMXPythonScope opposite: #scopeOwner",
+		"#superClasses => FMMany type: #FMXPythonSClass opposite: #subClasses",
+		"#subClasses => FMMany type: #FMXPythonSClass opposite: #superClasses"
+	],
+	"name" : "FMXPythonSClass",
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"traitcomposition" : "FMXPythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FamixPython-Entities"
+}

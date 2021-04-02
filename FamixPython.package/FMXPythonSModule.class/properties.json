@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"category" : "FamixPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#sPackage => FMOne type: #FMXPythonSPackage opposite: #modules",
+		"#classes => FMMany type: #FMXPythonSClass opposite: #sModule",
+		"#classImported => FMMany type: #FMXPythonSClass opposite: #sModule",
+		"#fuctionImported => FMMany type: #FMXPythonSFunction opposite: #sModule",
+		"#scope => FMOne type: #FMXPythonScope opposite: #scopeOwner"
+	],
+	"name" : "FMXPythonSModule",
+	"type" : "normal"
+}

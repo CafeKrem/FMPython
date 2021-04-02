@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"category" : "FamixPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#op => FMProperty"
+	],
+	"name" : "FMXPythonOperationSymbol",
+	"type" : "normal"
+}

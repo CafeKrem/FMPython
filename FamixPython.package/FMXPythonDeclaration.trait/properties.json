@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "FamixPython-Traits",
+	"instvars" : [
+		"#scopeOwner => FMOne type: #FMXPythonScope opposite: #declarations"
+	],
+	"name" : "FMXPythonDeclaration"
+}

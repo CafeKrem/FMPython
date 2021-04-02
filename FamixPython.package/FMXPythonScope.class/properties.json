@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"category" : "FamixPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#id => FMProperty",
+		"#scopeOwner => FMOne type: #FMXPythonSModule opposite: #scope",
+		"#subScope => FMMany type: #FMXPythonScope opposite: #parentScope",
+		"#parentScope => FMOne type: #FMXPythonScope opposite: #subScope",
+		"#declarations => FMMany type: #FMXPythonDeclaration opposite: #scopeOwner"
+	],
+	"name" : "FMXPythonScope",
+	"type" : "normal"
+}

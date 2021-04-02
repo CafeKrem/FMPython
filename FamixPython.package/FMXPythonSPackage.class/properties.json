@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"category" : "FamixPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#modules => FMMany type: #FMXPythonSModule opposite: #sPackage",
+		"#subPackage => FMMany type: #FMXPythonSPackage opposite: #sPackage",
+		"#sPackage => FMOne type: #FMXPythonSPackage opposite: #subPackage"
+	],
+	"name" : "FMXPythonSPackage",
+	"type" : "normal"
+}

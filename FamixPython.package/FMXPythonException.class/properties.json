@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"category" : "FamixPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#description => FMProperty"
+	],
+	"name" : "FMXPythonException",
+	"type" : "normal"
+}

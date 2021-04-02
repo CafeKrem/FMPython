@@ -1,0 +1,18 @@
+{
+	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#name => FMProperty",
+		"#isClassSide => FMProperty",
+		"#sModule => FMOne type: #FMXPythonSModule opposite: #fuctionImported",
+		"#scope => FMOne type: #FMXPythonScope opposite: #scopeOwner"
+	],
+	"name" : "FMXPythonSFunction",
+	"commentStamp" : "",
+	"super" : "FMXPythonEntity",
+	"traitcomposition" : "FMXPythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FamixPython-Entities"
+}
