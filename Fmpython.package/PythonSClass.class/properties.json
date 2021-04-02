@@ -2,9 +2,9 @@
 	"classtraitcomposition" : "PythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#classScope => FMOne type: #PythonScope opposite: #sClass",
+		"#classScope => FMOne type: #PythonScope opposite: #scopeOwner",
 		"#declaration => FMOne type: #PythonClassDeclaration opposite: #sClass",
-		"#instanceScope => FMOne type: #PythonScope opposite: #sClass",
+		"#instanceScope => FMOne type: #PythonScope opposite: #scopeOwner",
 		"#name => FMProperty",
 		"#statements => FMMany type: #PythonStatement opposite: #sClass",
 		"#subClasses => FMMany type: #PythonSClass opposite: #superClasses",

@@ -13,7 +13,6 @@ defineClasses
   comprehension := builder newClassNamed: #Comprehension.
   withItem := builder newClassNamed: #WithItem.
   rootNode := builder newClassNamed: #RootNode.
-  subscriptionIndex := builder newClassNamed: #SubscriptionIndex.
   exceptionAssociation := builder newClassNamed: #ExceptionAssociation.
   parameter := builder newClassNamed: #Parameter.
   return := builder newClassNamed: #Return.

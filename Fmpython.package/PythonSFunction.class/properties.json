@@ -6,7 +6,7 @@
 		"#decorateurs => FMMany type: #PythonExpression opposite: #sFunction",
 		"#isClassSide => FMProperty",
 		"#name => FMProperty",
-		"#scope => FMOne type: #PythonScope opposite: #sFunction",
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
 		"#statements => FMMany type: #PythonStatement opposite: #sFunction"
 	],
 	"name" : "PythonSFunction",

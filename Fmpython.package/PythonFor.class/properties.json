@@ -4,9 +4,9 @@
 	"instvars" : [
 		"#orelse => FMMany type: #PythonStatement opposite: #parentOrelse",
 		"#body => FMMany type: #PythonStatement opposite: #parentForBody",
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner",
 		"#iterable => FMOne type: #PythonExpression opposite: #parentForIterable",
-		"#iterationVar => FMOne type: #PythonVarRef opposite: #for",
-		"#scope => FMOne type: #PythonScope opposite: #for"
+		"#iterationVar => FMOne type: #PythonVarRef opposite: #for"
 	],
 	"name" : "PythonFor",
 	"commentStamp" : "",

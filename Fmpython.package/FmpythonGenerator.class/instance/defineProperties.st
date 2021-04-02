@@ -15,6 +15,7 @@ defineProperties
   sFunction property: #isClassSide type: #Boolean.
   sClass property: #name type: #String.
   call property: #callee type: #String.
+  varRef property: #name type: #String.
   attributeNav property: #attributeName type: #String.
   integer property: #value type: #Number.
   string property: #value type: #String.

@@ -2,6 +2,7 @@
 	"classtraitcomposition" : "PythonAssignedTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
+		"#name => FMProperty",
 		"#definition => FMOne type: #PythonDeclaration opposite: #references",
 		"#exceptionAssociation => FMOne type: #PythonExceptionAssociation opposite: #allias",
 		"#global => FMOne type: #PythonGlobal opposite: #varRef",

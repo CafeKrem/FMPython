@@ -12,7 +12,7 @@
 		"#statements => FMMany type: #PythonStatement opposite: #sModule",
 		"#classImported => FMMany type: #PythonSClass opposite: #sModule",
 		"#fuctionImported => FMMany type: #PythonSFunction opposite: #sModule",
-		"#scope => FMOne type: #PythonScope opposite: #sModule"
+		"#scope => FMOne type: #PythonScope opposite: #scopeOwner"
 	],
 	"name" : "PythonSModule",
 	"type" : "normal"

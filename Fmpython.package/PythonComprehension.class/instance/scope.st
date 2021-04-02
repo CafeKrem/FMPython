@@ -1,6 +1,7 @@
 accessing
 scope
-	"Relation named: #scope type: #PythonScope opposite: #comprehension"
+	"Relation named: #scope type: #PythonScope opposite: #scopeOwner"
 
 	<generated>
+	<derived>
 	^ scope

@@ -1,6 +1,6 @@
 accessing
 scope
-	"Relation named: #scope type: #PythonScope opposite: #sModule"
+	"Relation named: #scope type: #PythonScope opposite: #scopeOwner"
 
 	<generated>
 	^ scope

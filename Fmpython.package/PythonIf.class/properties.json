@@ -7,10 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"#body => FMMany type: #PythonStatement opposite: #parentIfBody",
+		"#cond => FMOne type: #PythonExpression opposite: #ifOwner",
+		"#elif => FMOne type: #PythonIf opposite: #ifParent",
 		"#else => FMMany type: #PythonStatement opposite: #parentElse",
-		"#elif => FMOne type: #PythonIf opposite: #if",
-		"#if => FMOne type: #PythonIf opposite: #elif",
-		"#cond => FMOne type: #PythonExpression opposite: #if"
+		"#ifParent => FMMany type: #PythonIf opposite: #elif"
 	],
 	"name" : "PythonIf",
 	"type" : "normal"
