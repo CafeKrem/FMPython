@@ -16,7 +16,8 @@
 		"parameter",
 		"expression",
 		"sFunction",
-		"sClass"
+		"sClass",
+		"statement"
 	],
 	"name" : "FamixPythonGenerator",
 	"type" : "normal"
