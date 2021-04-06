@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"#declarations => FMMany type: #FMXPythonDeclaration opposite: #scope",
 		"#id => FMProperty",
-		"#scopeOwner => FMOne type: #FMXPythonSModule opposite: #scope",
-		"#subScope => FMMany type: #FMXPythonScope opposite: #parentScope",
 		"#parentScope => FMOne type: #FMXPythonScope opposite: #subScope",
-		"#declarations => FMMany type: #FMXPythonDeclaration opposite: #scopeOwner"
+		"#scopeOwner => FMOne type: #FMXPythonSModule opposite: #scope",
+		"#subScope => FMMany type: #FMXPythonScope opposite: #parentScope"
 	],
 	"name" : "FMXPythonScope",
 	"type" : "normal"

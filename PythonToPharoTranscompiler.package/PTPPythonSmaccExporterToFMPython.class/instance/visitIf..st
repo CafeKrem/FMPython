@@ -1,6 +1,6 @@
 visit
 visitIf: aPyIfNode
-	^ PythonIf new
+	^ FastPythonIf new
 		body: (aPyIfNode statements collect: [ :each | each acceptVisitor: self ]);
 		else: (aPyIfNode else acceptVisitor: self);
 		cond: (aPyIfNode if acceptVisitor: self);

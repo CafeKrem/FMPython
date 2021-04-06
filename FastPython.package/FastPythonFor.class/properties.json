@@ -1,5 +1,5 @@
 {
-	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
+	"classtraitcomposition" : "FMXPythonAsynchronable classTrait + FMXPythonScopable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#iterationVar => FMOne type: #FastPythonAssignedTarget opposite: #for"
@@ -7,7 +7,7 @@
 	"name" : "FastPythonFor",
 	"commentStamp" : "",
 	"super" : "FASTStatement",
-	"traitcomposition" : "FMXPythonAsynchronable",
+	"traitcomposition" : "FMXPythonAsynchronable + FMXPythonScopable",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

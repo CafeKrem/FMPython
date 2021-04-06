@@ -1,7 +1,7 @@
 visit
 visitPlusExpr: aPyPlusExprNode
-	^ PythonBinOp new
+	^ FastPythonBinOp new
 		left: (aPyPlusExprNode one acceptVisitor: self);
 		right: (aPyPlusExprNode two acceptVisitor: self);
-		op: (FMPythonFactory operationSymbol: aPyPlusExprNode plusToken value);
+		op: (FamixPythonFactory lookAtOperationSymbol: aPyPlusExprNode plusToken value);
 		yourself

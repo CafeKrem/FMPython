@@ -12,4 +12,7 @@ defineTraits
 		               withPrefix: FamixPythonGenerator prefix.
 	asynchronable := self
 		                 remoteTrait: #Asynchronable
-		                 withPrefix: FamixPythonGenerator prefix
+		                 withPrefix: FamixPythonGenerator prefix.
+	scopable := self
+		            remoteTrait: #Scopable
+		            withPrefix: FamixPythonGenerator prefix

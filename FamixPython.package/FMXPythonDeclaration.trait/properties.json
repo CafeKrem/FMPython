@@ -3,7 +3,8 @@
 	"classinstvars" : [ ],
 	"category" : "FamixPython-Traits",
 	"instvars" : [
-		"#scopeOwner => FMOne type: #FMXPythonScope opposite: #declarations"
+		"#name => FMProperty",
+		"#scope => FMOne type: #FMXPythonScope opposite: #declarations"
 	],
 	"name" : "FMXPythonDeclaration"
 }

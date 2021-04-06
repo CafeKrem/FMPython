@@ -5,4 +5,5 @@ statements
 	<generated>
 	<derived>
 	<FMProperty: #statements type: #FASTStatement opposite: #sModule>
+	<package: #'FastPython'>
 	^ self attributeAt: #statements ifAbsentPut: [ FMMultivalueLink on: self opposite: #sModule: ]

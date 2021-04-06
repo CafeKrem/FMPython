@@ -1,5 +1,5 @@
 visit
 visitFpdef: aPyFpdefNode
-	^ PythonVarRef new
+	^ FastPythonVarRef new
 		name: aPyFpdefNode nameToken value;
 		yourself

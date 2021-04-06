@@ -1,16 +1,15 @@
 {
-	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
+	"classtraitcomposition" : "FMXPythonAsynchronable classTrait + FMXPythonScopable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#fonctionImportByModule => FMOne type: #FMXPythonSModule opposite: #fuctionImported",
 		"#isClassSide => FMProperty",
-		"#name => FMProperty",
-		"#scope => FMOne type: #FMXPythonScope opposite: #scopeOwner"
+		"#name => FMProperty"
 	],
 	"name" : "FMXPythonSFunction",
 	"commentStamp" : "",
 	"super" : "FMXPythonEntity",
-	"traitcomposition" : "FMXPythonAsynchronable",
+	"traitcomposition" : "FMXPythonAsynchronable + FMXPythonScopable",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

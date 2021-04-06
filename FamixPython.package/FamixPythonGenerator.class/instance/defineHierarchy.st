@@ -1,7 +1,12 @@
 definition
 defineHierarchy
-  super defineHierarchy.
 
-  sFunction --|> asynchronable.
-  sClass --|> asynchronable.
-  
+	super defineHierarchy.
+
+	sFunction --|> asynchronable.
+	sClass --|> asynchronable.
+
+	scopable
+		<|-- sClass;
+		<|-- sFunction;
+		<|-- sModule

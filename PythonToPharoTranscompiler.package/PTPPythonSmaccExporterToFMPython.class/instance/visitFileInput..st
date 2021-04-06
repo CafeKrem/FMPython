@@ -1,8 +1,8 @@
 visiting
 visitFileInput: aFileInput
 	| module scope |
-	scope := PythonScope new.
-	module := PythonSModule new.
+	scope := FMXPythonScope new.
+	module := FMXPythonSModule new.
 	module scope: scope.
 	scope scopeOwner: module.
 	module

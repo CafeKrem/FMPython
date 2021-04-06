@@ -1,5 +1,5 @@
 visit
 visitSymbol: aPySymbolNode
-	^ PythonVarRef new
+	^ FastPythonVarRef new
 		name: aPySymbolNode nameToken value;
 		yourself

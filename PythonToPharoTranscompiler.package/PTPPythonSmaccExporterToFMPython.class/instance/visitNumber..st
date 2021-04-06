@@ -1,5 +1,5 @@
 visit
 visitNumber: aPyNumberNode
-	^ PythonInteger new
+	^ FastPythonInteger new
 		value: aPyNumberNode numberToken value asInteger;
 		yourself

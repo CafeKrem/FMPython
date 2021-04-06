@@ -3,7 +3,6 @@ defineRelations
 
 	super defineRelations.
 
-	(varRef property: #definition) *- (declaration property: #references).
 	(statement property: #parentIfBody) *-<> (if property: #body).
 	(statement property: #parentElse) *-<> (if property: #else).
 	(statement property: #parentOrelse) *-<> (for property: #orelse).
@@ -26,12 +25,12 @@ defineRelations
 	(scope property: #subScope) -* (scope property: #parentScope).
 	(scope property: #declarations)
 	<>-* (declaration property: #scopeOwner).
-	(scope property: #scopeOwner) -<> (sFunction property: #scope).
+	"(scope property: #scopeOwner) -<> (sFunction property: #scope).
 	(scope property: #scopeOwner) -<> (sClass property: #classScope).
 	(scope property: #scopeOwner) -<> (sClass property: #instanceScope).
 	(scope property: #scopeOwner) -<> (for property: #scope).
 	(scope property: #scopeOwner) -<> (comprehension property: #scope).
-	(scope property: #scopeOwner) -<> (with property: #scope).
+	(scope property: #scopeOwner) -<> (with property: #scope)."
 	(declaration property: #references) -* (varRef property: #definition).
 	(comprehension property: #target)
 	<>- (expression property: #parentTarget).
@@ -58,8 +57,6 @@ defineRelations
 	(while property: #cond) <>- (expression property: #while).
 	(while property: #body) <>-* (statement property: #while).
 	(assign property: #right) <>- (expression property: #assign).
-	(expressionStatement property: #expr)
-	<>- (expression property: #expressionStatement).
 	(expression property: #parentForIterable)
 	-<> (for property: #iterable).
 	(try property: #body) <>-* (statement property: #try).

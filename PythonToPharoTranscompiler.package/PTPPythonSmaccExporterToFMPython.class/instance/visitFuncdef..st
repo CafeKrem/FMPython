@@ -2,7 +2,7 @@ visit
 visitFuncdef: aPyFuncdefNode
 	| parameters |
 	parameters := aPyFuncdefNode parameters acceptVisitor: self.
-	^ PythonFunctionDeclaration new
+	^ FastPythonFunctionDeclaration new
 		parameters: parameters;
 		body:
 			(aPyFuncdefNode statements
@@ -10,11 +10,11 @@ visitFuncdef: aPyFuncdefNode
 		sfunction: nil;
 		name: aPyFuncdefNode fname value;
 		scope:
-			(PythonScope new
+			(FMXPythonScope new
 				declarations:
 					(parameters
 						collect: [ :each | 
-							PythonVarDeclaration new
+							FastPythonVarDeclaration new
 								name: each name;
 								addReference: each;
 								yourself ]);

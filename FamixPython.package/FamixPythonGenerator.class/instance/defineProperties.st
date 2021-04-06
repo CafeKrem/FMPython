@@ -2,7 +2,7 @@ definition
 defineProperties
 
 	super defineProperties.
-
+	declaration property: #name type: #String.
 	sPackage property: #name type: #String.
 	sModule property: #name type: #String.
 	operationSymbol property: #op type: #String.

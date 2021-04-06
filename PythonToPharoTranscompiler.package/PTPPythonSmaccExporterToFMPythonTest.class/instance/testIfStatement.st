@@ -9,7 +9,6 @@ testIfStatement
 	fmPython := smaccPythonVisitor visit: smaccPythonModel.
 	if := fmPython statements first.
 	self assert: fmPython statements size equals: 1.
-	self assert: (if isKindOf: PythonStatement).
 	self
 		assert: if cond
 		equals:
