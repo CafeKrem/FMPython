@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "FastPython-Traits",
+	"instvars" : [
+		"#joinedStr => FMOne type: #FastPythonJoinedStr opposite: #items"
+	],
+	"name" : "FastPythonJoinedStringItem"
+}

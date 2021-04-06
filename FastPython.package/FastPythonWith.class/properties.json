@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#withItems => FMMany type: #FastPythonWithItem opposite: #with"
+	],
+	"name" : "FastPythonWith",
+	"commentStamp" : "",
+	"super" : "FASTStatement",
+	"traitcomposition" : "FMXPythonAsynchronable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
+}

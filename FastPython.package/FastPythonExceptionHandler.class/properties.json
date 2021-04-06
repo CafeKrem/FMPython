@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#exceptionAssociations => FMMany type: #FastPythonExceptionAssociation opposite: #exceptionHandler",
+		"#try => FMOne type: #FastPythonTry opposite: #exceptHandlers"
+	],
+	"name" : "FastPythonExceptionHandler",
+	"type" : "normal"
+}

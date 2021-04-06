@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "FastPythonAssignedTarget classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonTuple",
+	"commentStamp" : "",
+	"super" : "FastPythonCollection",
+	"traitcomposition" : "FastPythonAssignedTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
+}

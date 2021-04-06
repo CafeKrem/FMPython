@@ -1,3 +1,3 @@
 accessing
 prefix
-	^ 'Python'
+	^ 'FastPython'

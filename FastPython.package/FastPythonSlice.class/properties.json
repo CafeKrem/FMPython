@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "FastPythonSubscriptionIndex classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonSlice",
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FastPythonSubscriptionIndex",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
+}

@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "FMXPythonDeclaration classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#superClasses => FMMany type: #FastPythonVarRef opposite: #classDeclaration"
+	],
+	"name" : "FastPythonClassDeclaration",
+	"commentStamp" : "",
+	"super" : "FASTStatement",
+	"traitcomposition" : "FMXPythonDeclaration",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
+}

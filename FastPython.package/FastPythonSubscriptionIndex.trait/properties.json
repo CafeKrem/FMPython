@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "FastPython-Traits",
+	"instvars" : [
+		"#parentSubscription => FMOne type: #FastPythonSubscript opposite: #index"
+	],
+	"name" : "FastPythonSubscriptionIndex"
+}

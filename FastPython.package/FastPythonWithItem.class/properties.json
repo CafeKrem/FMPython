@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#with => FMOne type: #FastPythonWith opposite: #withItems"
+	],
+	"name" : "FastPythonWithItem",
+	"type" : "normal"
+}

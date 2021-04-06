@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MooseEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonEntity",
+	"type" : "normal"
+}

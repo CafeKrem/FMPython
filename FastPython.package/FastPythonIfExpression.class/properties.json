@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FASTExpression",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonIfExpression",
+	"type" : "normal"
+}

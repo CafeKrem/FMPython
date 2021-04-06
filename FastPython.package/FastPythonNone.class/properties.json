@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FASTNullPointerLiteral",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonNone",
+	"type" : "normal"
+}

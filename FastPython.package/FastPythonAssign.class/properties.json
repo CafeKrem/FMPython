@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FASTStatement",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#left => FMOne type: #FastPythonAssignedTarget opposite: #parentAssign"
+	],
+	"name" : "FastPythonAssign",
+	"type" : "normal"
+}

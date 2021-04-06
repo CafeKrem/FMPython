@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "FastPython-Traits",
+	"instvars" : [
+		"#parentAssign => FMOne type: #FastPythonAssign opposite: #left",
+		"#assignExpression => FMOne type: #FastPythonAssignExpression opposite: #left",
+		"#for => FMOne type: #FastPythonFor opposite: #iterationVar"
+	],
+	"name" : "FastPythonAssignedTarget"
+}

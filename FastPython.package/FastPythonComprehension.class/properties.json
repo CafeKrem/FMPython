@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#comprehensionExpression => FMOne type: #FastPythonComprehensionExpression opposite: #comprehension"
+	],
+	"name" : "FastPythonComprehension",
+	"type" : "normal"
+}

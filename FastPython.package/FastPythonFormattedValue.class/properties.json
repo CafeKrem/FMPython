@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "FastPythonJoinedStringItem classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FastPythonFormattedValue",
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FastPythonJoinedStringItem",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
+}

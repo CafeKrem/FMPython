@@ -2,22 +2,26 @@ definition
 defineClasses
 
 	super defineClasses.
-	
-	statement := self remoteEntity:   #Statement withPrefix: #FAST.
+
+	statement := self remoteEntity: #Statement withPrefix: #FAST.
 	expression := self remoteEntity: #Expression withPrefix: #FAST.
 	literal := self remoteEntity: #Literal withPrefix: #FAST.
 	boolean := self remoteEntity: #BooleanLiteral withPrefix: #FAST.
 	string := self remoteEntity: #String withPrefix: #FAST.
-	fastVarRef := self remoteEntity: #VariableExpression withPrefix: #FAST.
+	fastVarRef := self
+		              remoteEntity: #VariableExpression
+		              withPrefix: #FAST.
 	null := self remoteEntity: #NullPointerLiteral withPrefix: #FAST.
-	expressionStatement := self remoteEntity:  #ExpressionStatement withPrefix:  #FAST.
-	return := self remoteEntity: #ReturnStatement withPrefix:  #FAST.
-	 
-	
+	expressionStatement := self
+		                       remoteEntity: #ExpressionStatement
+		                       withPrefix: #FAST.
+	return := self remoteEntity: #ReturnStatement withPrefix: #FAST.
+
+
 	varRef := builder newClassNamed: #VarRef.
-	
-	
-	none := builder  newClassNamed:  #None.
+
+
+	none := builder newClassNamed: #None.
 	itemDict := builder newClassNamed: #ItemDict.
 	exceptionHandler := builder newClassNamed: #ExceptionHandler.
 	exception := builder newClassNamed: #Exception.
@@ -49,7 +53,6 @@ defineClasses
 	unOp := builder newClassNamed: #UnOp.
 	ifExpression := builder newClassNamed: #IfExpression.
 	sFunction := builder newClassNamed: #SFunction.
-	sClass := builder newClassNamed: #SClass.
 	lambda := builder newClassNamed: #Lambda.
 	call := builder newClassNamed: #Call.
 	with := builder newClassNamed: #With.
@@ -88,4 +91,7 @@ defineClasses
 		         withPrefix: FamixPythonGenerator prefix.
 	parameter := self
 		             remoteEntity: #Parameter
-		             withPrefix: FamixPythonGenerator prefix
+		             withPrefix: FamixPythonGenerator prefix.
+	sClass := self
+		          remoteEntity: #SClass
+		          withPrefix: FamixPythonGenerator prefix
