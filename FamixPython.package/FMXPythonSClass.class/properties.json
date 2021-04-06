@@ -2,12 +2,13 @@
 	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#name => FMProperty",
-		"#sModule => FMOne type: #FMXPythonSModule opposite: #classes",
 		"#classScope => FMOne type: #FMXPythonScope opposite: #scopeOwner",
 		"#instanceScope => FMOne type: #FMXPythonScope opposite: #scopeOwner",
-		"#superClasses => FMMany type: #FMXPythonSClass opposite: #subClasses",
-		"#subClasses => FMMany type: #FMXPythonSClass opposite: #superClasses"
+		"#moduleImportByModule => FMOne type: #FMXPythonSModule opposite: #classImported",
+		"#name => FMProperty",
+		"#sModule => FMOne type: #FMXPythonSModule opposite: #classes",
+		"#subClasses => FMMany type: #FMXPythonSClass opposite: #superClasses",
+		"#superClasses => FMMany type: #FMXPythonSClass opposite: #subClasses"
 	],
 	"name" : "FMXPythonSClass",
 	"commentStamp" : "",

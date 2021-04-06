@@ -6,9 +6,9 @@ defineRelations
 	(sPackage property: #modules) <>-* (sModule property: #sPackage).
 	(sPackage property: #subPackage) <>-* (sPackage property: #sPackage).
 	(sModule property: #classes) <>-* (sClass property: #sModule).
-	(sModule property: #classImported) -* (sClass property: #sModule).
+	(sModule property: #classImported) -* (sClass property: #moduleImportByModule).
 	(sModule property: #fuctionImported)
-	-* (sFunction property: #sModule).
+	-* (sFunction property: #fonctionImportByModule).
 
 	(sModule property: #scope) <>- (scope property: #scopeOwner).
 	(scope property: #subScope) -* (scope property: #parentScope).

@@ -2,9 +2,9 @@
 	"classtraitcomposition" : "FMXPythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"#name => FMProperty",
+		"#fonctionImportByModule => FMOne type: #FMXPythonSModule opposite: #fuctionImported",
 		"#isClassSide => FMProperty",
-		"#sModule => FMOne type: #FMXPythonSModule opposite: #fuctionImported",
+		"#name => FMProperty",
 		"#scope => FMOne type: #FMXPythonScope opposite: #scopeOwner"
 	],
 	"name" : "FMXPythonSFunction",

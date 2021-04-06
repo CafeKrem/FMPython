@@ -1,6 +1,6 @@
 accessing
 fuctionImported
-	"Relation named: #fuctionImported type: #FMXPythonSFunction opposite: #sModule"
+	"Relation named: #fuctionImported type: #FMXPythonSFunction opposite: #fonctionImportByModule"
 
 	<generated>
 	<derived>
