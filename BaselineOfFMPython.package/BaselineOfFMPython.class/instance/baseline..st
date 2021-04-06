@@ -5,7 +5,9 @@ baseline: spec
 	spec for: #common do: [ 
 		spec
 			package: 'Fmpython';
-			package: 'PythonToPharoTranscompiler'.
+			package: 'PythonToPharoTranscompiler';
+			package: 'FamixPython';
+			package: 'FastPython'.
 		spec
 			baseline: 'PythonParser'
 			with: [ spec repository: 'github://SmaCCRefactoring/SmaCC' ].
