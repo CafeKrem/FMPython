@@ -8,7 +8,6 @@ defineProperties
   exception property: #name type: #String.
   exception property: #description type: #String.
   scope property: #id type: #String.
-  declaration property: #name type: #String.
   asynchronable property: #isAsync type: #Boolean.
   parameter property: #name type: #String.
   sFunction property: #name type: #String.
