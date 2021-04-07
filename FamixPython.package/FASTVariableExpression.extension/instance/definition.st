@@ -3,7 +3,7 @@ definition
 	"Relation named: #definition type: #FMXPythonDeclaration opposite: #references"
 
 	<generated>
-	<derived>
+	<container>
 	<FMProperty: #definition type: #FMXPythonDeclaration opposite: #references>
 	<package: #'FamixPython'>
-	^ self attributeAt: #definition ifAbsentPut: [ FMMultivalueLink on: self opposite: #references: ]
+	^ self attributeAt: #definition ifAbsent: [ nil ]

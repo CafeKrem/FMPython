@@ -2,4 +2,4 @@
 definition: anObject
 
 	<generated>
-	self definition value: anObject
+	self attributeAt: #definition put: (FMMultivalueLink on: self update: #references from: self definition to: anObject).

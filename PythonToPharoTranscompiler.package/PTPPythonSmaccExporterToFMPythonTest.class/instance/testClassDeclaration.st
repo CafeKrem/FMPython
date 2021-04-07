@@ -15,7 +15,6 @@ testClassDeclaration
 	classDeclaration := fmPython statements first.
 	fctA := classDeclaration body first.
 	fctB := classDeclaration body second.
-	self assert: (classDeclaration isKindOf: PythonClassDeclaration).
 	self assert: classDeclaration body size equals: 2.
 	self assert: classDeclaration name value equals: 'A'.
 	self assert: fctA name equals: 'functionA'.
