@@ -2,6 +2,7 @@ definition
 defineClasses
 
 	super defineClasses.
+	variableExpression := self remoteEntity: #VariableExpression withPrefix: #FAST.
 	expression := self remoteEntity: #Expression withPrefix: #FAST.
 	 statement := self remoteEntity: #Statement withPrefix: #FAST.
 	scope := builder newClassNamed: #Scope.

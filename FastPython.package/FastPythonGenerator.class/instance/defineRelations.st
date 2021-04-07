@@ -2,19 +2,11 @@ definition
 defineRelations
 
 	super defineRelations.
-
+	
 	(statement property: #parentIfBody) *-<> (if property: #body).
 	(statement property: #parentElse) *-<> (if property: #else).
 	(statement property: #parentOrelse) *-<> (for property: #orelse).
 	(statement property: #parentForBody) *-<> (for property: #body).
-	(sPackage property: #modules) <>-* (sModule property: #sPackage).
-	(sPackage property: #subPackage) <>-* (sPackage property: #sPackage).
-	(sModule property: #classes) <>-* (sClass property: #sModule).
-	(sModule property: #statements) <>-* (statement property: #sModule).
-	(sModule property: #classImported) -* (sClass property: #sModule).
-	(sModule property: #fuctionImported)
-	-* (sFunction property: #sModule).
-	(sModule property: #scope) <>- (scope property: #scopeOwner).
 	(itemDict property: #key) <>- (expression property: #itemDict).
 	(itemDict property: #value) <>- (expression property: #itemDict).
 	(assignedTarget property: #parentAssign) -<> (assign property: #left).
@@ -22,17 +14,8 @@ defineRelations
 	<>-* (statement property: #exceptionHandler).
 	(exceptionHandler property: #exceptionAssociations)
 	-* (exceptionAssociation property: #exceptionHandler).
-	(scope property: #subScope) -* (scope property: #parentScope).
-	(scope property: #declarations)
-	<>-* (declaration property: #scopeOwner).
-	"(scope property: #scopeOwner) -<> (sFunction property: #scope).
-	(scope property: #scopeOwner) -<> (sClass property: #classScope).
-	(scope property: #scopeOwner) -<> (sClass property: #instanceScope).
-	(scope property: #scopeOwner) -<> (for property: #scope).
-	(scope property: #scopeOwner) -<> (comprehension property: #scope).
-	(scope property: #scopeOwner) -<> (with property: #scope)."
-	(declaration property: #references) -* (varRef property: #definition).
-	(comprehension property: #target)
+	"(declaration property: #references) -* (varRef property: #definition).
+	"(comprehension property: #target)
 	<>- (expression property: #parentTarget).
 	(comprehension property: #iterable)
 	<>- (expression property: #parentComprehensionIterable).
@@ -51,7 +34,6 @@ defineRelations
 	<>- (assignedTarget property: #assignExpression).
 	(assignExpression property: #right)
 	<>- (expression property: #assignExpression).
-	"(return property: #returnValue)  <>- (expression property: #return)."
 	(if property: #elif) *- (if property: #ifParent).
 	(if property: #cond) <>- (expression property: #ifOwner).
 	(while property: #cond) <>- (expression property: #while).
@@ -89,14 +71,8 @@ defineRelations
 	<>- (expression property: #ifExpression).
 	(ifExpression property: #cond)
 	<>- (expression property: #ifExpression).
-	(sFunction property: #statements)
-	<>-* (statement property: #sFunction).
-	(sFunction property: #decorateurs)
-	<>-* (expression property: #sFunction).
 	(sFunction property: #declaration)
-	- (functionDeclaration property: #sfunction).
-	(sClass property: #statements) <>-* (statement property: #sClass).
-	(sClass property: #superClasses) *-* (sClass property: #subClasses).
+	- (functionDeclaration property: #sFunction).
 	(sClass property: #declaration)
 	- (classDeclaration property: #sClass).
 	(lambda property: #body) <>- (expression property: #lambda).

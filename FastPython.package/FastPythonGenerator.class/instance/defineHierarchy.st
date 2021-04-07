@@ -39,10 +39,8 @@ defineHierarchy
 	binOp --|> expression.
 	unOp --|> expression.
 	ifExpression --|> expression.
-	sFunction --|> statement.
-	sFunction --|> asynchronable.
-	sClass --|> statement.
-	sClass --|> asynchronable.
+	functionDeclaration --|> asynchronable.
+	classDeclaration --|> asynchronable.
 	literal --|> expression.
 	lambda --|> expression.
 	call --|> expression.

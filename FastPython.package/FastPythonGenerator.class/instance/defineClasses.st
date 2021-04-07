@@ -52,7 +52,6 @@ defineClasses
 	binOp := builder newClassNamed: #BinOp.
 	unOp := builder newClassNamed: #UnOp.
 	ifExpression := builder newClassNamed: #IfExpression.
-	sFunction := builder newClassNamed: #SFunction.
 	lambda := builder newClassNamed: #Lambda.
 	call := builder newClassNamed: #Call.
 	with := builder newClassNamed: #With.
@@ -77,21 +76,16 @@ defineClasses
 	generatorExp := builder newClassNamed: #GeneratorExp.
 	tuple := builder newClassNamed: #Tuple.
 
-	sPackage := self
-		            remoteEntity: #SPackage
-		            withPrefix: FamixPythonGenerator prefix.
-	sModule := self
-		           remoteEntity: #SModule
-		           withPrefix: FamixPythonGenerator prefix.
+	
 	operationSymbol := self
 		                   remoteEntity: #OperationSymbol
 		                   withPrefix: FamixPythonGenerator prefix.
-	scope := self
-		         remoteEntity: #Scope
-		         withPrefix: FamixPythonGenerator prefix.
 	parameter := self
 		             remoteEntity: #Parameter
 		             withPrefix: FamixPythonGenerator prefix.
 	sClass := self
 		          remoteEntity: #SClass
-		          withPrefix: FamixPythonGenerator prefix
+		          withPrefix: FamixPythonGenerator prefix.
+	sFunction := self
+		             remoteEntity: #SFunction
+		             withPrefix: FamixPythonGenerator prefix

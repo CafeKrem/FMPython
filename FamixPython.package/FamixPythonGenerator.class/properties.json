@@ -18,7 +18,8 @@
 		"sFunction",
 		"sClass",
 		"statement",
-		"scopable"
+		"scopable",
+		"variableExpression"
 	],
 	"name" : "FamixPythonGenerator",
 	"type" : "normal"
