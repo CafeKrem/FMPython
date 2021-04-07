@@ -6,8 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"#name => FMProperty",
-		"#description => FMProperty",
 		"#exceptionAssociation => FMOne type: #FastPythonExceptionAssociation opposite: #exception",
 		"#raise => FMOne type: #FastPythonRaise opposite: #exception"
 	],

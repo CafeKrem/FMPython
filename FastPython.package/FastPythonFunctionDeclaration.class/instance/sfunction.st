@@ -1,7 +1,8 @@
 accessing
-sfunction
-	"Relation named: #sfunction type: #FastPythonSFunction opposite: #declaration"
+sFunction
+	"Relation named: #sFunction type: #FMXPythonSFunction opposite: #declaration"
 
 	<generated>
 	<derived>
-	^ sfunction
+	<FMProperty: #sFunction type: #FMXPythonSFunction opposite: #declaration>
+	^ self attributeAt: #sFunction ifAbsent: [ nil ]
