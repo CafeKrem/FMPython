@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PythonToPharoTranscompiler-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modelDescription",
+		"configuration"
+	],
+	"name" : "FTPMatcher",
+	"type" : "normal"
+}

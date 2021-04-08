@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PythonToPharoTranscompiler-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "PTPPatternMatcherTest",
+	"type" : "normal"
+}

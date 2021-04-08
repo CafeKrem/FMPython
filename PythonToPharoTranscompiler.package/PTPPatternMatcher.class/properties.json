@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PythonToPharoTranscompiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"product"
+	],
+	"name" : "PTPPatternMatcher",
+	"type" : "normal"
+}
