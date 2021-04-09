@@ -1,17 +1,17 @@
 baselines
 baseline: spec
-
 	<baseline>
-	spec for: #common do: [ 
-		spec
-			package: 'Fmpython';
-			package: 'PythonToPharoTranscompiler';
-			package: 'FamixPython';
-			package: 'FastPython'.
-		spec
-			baseline: 'PythonParser'
-			with: [ spec repository: 'github://SmaCCRefactoring/SmaCC' ].
-		spec baseline: 'FAST' with: [ 
+	spec
+		for: #common
+		do: [ spec
+				package: 'Fmpython';
+				package: 'PythonToPharoTranscompiler';
+				package: 'FamixPython';
+				package: 'FastPython'.
 			spec
-				loads: #( 'default' );
-				repository: 'github://moosetechnology/FAST:v1.x.x/src' ] ]
+				baseline: 'PythonParser'
+				with: [ spec repository: 'github://SmaCCRefactoring/SmaCC' ].
+			spec
+				baseline: 'FASTPharo'
+				with:
+					[ spec repository: 'github://moosetechnology/FAST-Pharo/src' ] ]
