@@ -1,7 +1,6 @@
 accessing
-match: aValue withContext: aContext 
-	
-	| matchedValue |
-	matchedValue := value match: aValue withContext: aContext.
-	aContext at: key put: matchedValue.
-	self halt.
+match: aValue withContext: aContext
+	^ (value match: aValue withContext: aContext)
+		ifTrue: [ aContext at: key put: aValue.
+			true ]
+		ifFalse: [ false ]

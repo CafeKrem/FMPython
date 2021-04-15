@@ -11,5 +11,5 @@ testModelReferenceMatcher
 							(FASTStringLiteral new
 								value: 'klm';
 								yourself);
-						yourself)).
-	self deny: (pattern match: FASTExpressionStatement new)
+						yourself)) isMatch.
+	self deny: (pattern match: FASTExpressionStatement new) isMatch

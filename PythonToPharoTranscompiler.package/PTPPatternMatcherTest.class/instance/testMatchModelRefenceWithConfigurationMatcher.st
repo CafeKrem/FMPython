@@ -8,10 +8,10 @@ testMatchModelRefenceWithConfigurationMatcher
 			(pattern
 				match:
 					(FASTReturnStatement new
-						expression: (FASTStringLiteral new value: 'klm'))).
+						expression: (FASTStringLiteral new value: 'klm'))) isMatch.
 	self
 		deny:
 			(pattern
 				match:
 					(FASTReturnStatement new
-						expression: (FASTStringLiteral new value: 'patrick')))
+						expression: (FASTStringLiteral new value: 'patrick'))) isMatch

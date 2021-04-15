@@ -8,5 +8,8 @@ match: aValue withContext: aContext
 					pattern
 						match: (aValue perform: property implementingSelector)
 						withContext: aContext ])
-				or: [ aValue children
-						anySatisfy: [ :child | pattern match: child withContext: aContext ] ] ]
+				or: [ (aValue children
+						anySatisfy: [ :child | pattern match: child withContext: aContext ])
+						ifTrue: [ true ]
+						ifFalse: [ aValue children
+								anySatisfy: [ :child | self match: child withContext: aContext ] ] ] ]

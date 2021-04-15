@@ -9,7 +9,7 @@ testMatchModelRefenceWithConfigurationMatcher2
 		with: {(FASTStringLiteral with: {'klm'})}) asMatcher.
 	pattern2 := (FASTReturnStatement
 		with: {(FASTStringLiteral with: 'klm')}) asMatcher.
-	self assert: (pattern match: model1).
-	self assert: (pattern2 match: model1).
-	self deny: (pattern match: model2).
-	self deny: (pattern match: model2)
+	self assert: (pattern match: model1) isMatch.
+	self assert: (pattern2 match: model1) isMatch.
+	self deny: (pattern match: model2) isMatch.
+	self deny: (pattern match: model2) isMatch
