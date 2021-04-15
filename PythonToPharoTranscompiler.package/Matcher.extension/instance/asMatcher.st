@@ -1,0 +1,3 @@
+*PythonToPharoTranscompiler
+asMatcher
+	^ self
