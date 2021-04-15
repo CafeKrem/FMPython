@@ -1,0 +1,3 @@
+accessor
+configuration
+	^ configuration

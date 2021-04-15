@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"from",
-		"product",
-		"matchingStrategy"
+		"context",
+		"isMatch"
 	],
-	"name" : "PTPPatternMatcher",
+	"name" : "PTPMatcherResult",
 	"type" : "normal"
 }

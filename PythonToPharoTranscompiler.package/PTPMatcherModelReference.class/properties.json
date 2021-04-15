@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PTPMatcherModelEntity",
+	"category" : "PythonToPharoTranscompiler-model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modelDescription",
+		"configuration",
+		"cardinality"
+	],
+	"name" : "PTPMatcherModelReference",
+	"type" : "normal"
+}

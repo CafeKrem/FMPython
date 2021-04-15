@@ -1,0 +1,3 @@
+transformationModel
+asMatcher
+	^ self

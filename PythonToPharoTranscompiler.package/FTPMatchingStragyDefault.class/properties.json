@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"from",
-		"product",
-		"matchingStrategy"
+		"productionMemory",
+		"aContext"
 	],
-	"name" : "PTPPatternMatcher",
+	"name" : "FTPMatchingStragyDefault",
 	"type" : "normal"
 }
