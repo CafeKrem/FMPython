@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "CafeKrem 4/16/2021 09:28",
 	"super" : "Object",
-	"category" : "PythonToPharoTranscompiler",
+	"category" : "PythonToPharoTranscompiler-matcher",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
