@@ -1,0 +1,3 @@
+transformationLanguage
+asSubPatternWrapper
+	^ self
