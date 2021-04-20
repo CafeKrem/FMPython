@@ -15,9 +15,10 @@ match: aValue withContext: aContext
 	isFirst := true.
 	linkedList := LinkedList newFrom: collection.
 	[ linkedList isEmpty ]
-		whileFalse: [ element := linkedList removeFirst.
+		whileFalse: [ element := linkedList first.
 			(element match: aValue withContext: aContext)
-				ifTrue: [ element := linkedList removeFirst.
+				ifTrue: [ linkedList removeFirst.
+					element := linkedList first.
 					isFirst = false ]
 				ifFalse: [ isFirst
 						ifTrue: [ (aValue children sorted: [ :a :b | a startPos < b startPos ])
@@ -25,8 +26,13 @@ match: aValue withContext: aContext
 									(self pattern: element match: child withContext: aContext)
 										ifTrue: [ linkedList
 												ifEmpty: [ ^ true ]
-												ifNotEmpty: [ element := linkedList removeFirst.
-													isFirst := false ] ] ].
+												ifNotEmpty: [ linkedList removeFirst.
+													element := [ linkedList first ]
+														on: Error
+														do: [ nil ].
+													isFirst := false ] ]
+										ifFalse: [ (linkedList isEmpty not and: [ isFirst not ])
+												ifTrue: [ ^ false ] ] ].
 							isFirst
 								ifTrue: [ ^ false ] ]
 						ifFalse: [ ^ false ] ] ].
