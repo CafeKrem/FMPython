@@ -1,6 +1,7 @@
 as yet unclassified
 pattern: pattern match: aValue withContext: aContext
 	| isMatch |
+	self deprecated: 'TO REMOVE'.
 	isMatch := false.
 	^ (pattern match: aValue withContext: aContext)
 		ifTrue: [ true ]

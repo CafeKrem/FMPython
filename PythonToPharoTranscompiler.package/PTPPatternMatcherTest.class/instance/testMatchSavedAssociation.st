@@ -18,6 +18,5 @@ testMatchSavedAssociation
 				productFASTPharo: PTPPatternMatcherTest >> #methodTestReturnString).
 	self assert: matchResult1 isMatch.
 	self assert: (matchResult1 at: #a) class equals: FASTReturnStatement.
-	self assert: matchResult2 isMatch.
-	self assert: (matchResult2 at: #a) class equals: FASTReturnStatement.
+	self deny: matchResult2 isMatch.
 	self deny: matchResult3 isMatch

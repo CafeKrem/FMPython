@@ -1,16 +1,7 @@
 accessing
-match: aValue withContext: aContext
-	"^ collection
-		ifEmpty: [ true ]
-		ifNotEmpty: [ :coll | 
-			first := coll first.
-			(first match: aValue withContext: aContext)
-				ifTrue: [ coll allButFirst
-						allSatisfy: [ :eachMatcher | eachMatcher match: aValue withContext: aContext ] ]
-				ifFalse: [ aValue children
-						anySatisfy: [ :child | self match: child withContext: aContext ] ] ]"
-
-	| linkedList element isFirst |
+templateMatch: aValue withContext: aContext
+	^ collection first match: aValue withContext: aContext
+	"| linkedList element isFirst |
 	collection ifEmpty: [ ^ true ].
 	isFirst := true.
 	linkedList := LinkedList newFrom: collection.
@@ -36,4 +27,4 @@ match: aValue withContext: aContext
 							isFirst
 								ifTrue: [ ^ false ] ]
 						ifFalse: [ ^ false ] ] ].
-	^ linkedList isEmpty
+	^ linkedList isEmpty"
