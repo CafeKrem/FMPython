@@ -1,5 +1,5 @@
 accessing
-firstElementOf: aCollection
+pop: aCollection
 	^ aCollection isCollection
-		ifTrue: [ aCollection first ]
+		ifTrue: [ aCollection removeFirst  ]
 		ifFalse: [ aCollection ]

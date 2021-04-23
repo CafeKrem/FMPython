@@ -1,7 +1,5 @@
 accessing
-templateMatch: aCollection withContext: aContext
-	| aValue |
-	aValue := self firstElementOf: aCollection..
+templateMatch: aValue withContext: aContext
 	^ (value match: aValue withContext: aContext)
 		ifTrue: [ aContext at: key put: aValue.
 			true ]

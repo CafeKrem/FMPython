@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"next"
+		"next",
+		"matchedNodes",
+		"savedSelector"
 	],
 	"name" : "PTPMatcherModelEntity",
 	"type" : "normal"

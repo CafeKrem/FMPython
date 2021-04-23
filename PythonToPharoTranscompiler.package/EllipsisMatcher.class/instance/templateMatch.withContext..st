@@ -1,3 +1,3 @@
 accessing
 templateMatch: aCollection withContext: aContext
-	^self subclassResponsibility 
+	"do nothing in this case"
