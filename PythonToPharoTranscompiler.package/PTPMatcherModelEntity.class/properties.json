@@ -8,7 +8,8 @@
 	"instvars" : [
 		"next",
 		"matchedNodes",
-		"savedSelector"
+		"savedSelector",
+		"previous"
 	],
 	"name" : "PTPMatcherModelEntity",
 	"type" : "normal"

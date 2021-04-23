@@ -6,5 +6,6 @@ asMatcher
 	tmp allButFirst
 		do: [ :each | 
 			first next: each.
+			each previous: first.
 			first := each ].
 	^ tmp first
