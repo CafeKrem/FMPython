@@ -1,5 +1,5 @@
 accessing
-match: aValue withContext: aContext
+templateMatch: aValue withContext: aContext
 	^ aValue class = modelDescription
 		ifTrue: [ configuration match: aValue withContext: aContext ]
 		ifFalse: [ false ]

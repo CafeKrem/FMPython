@@ -1,9 +1,8 @@
 tests
 testMatchSavedAssociation
 	| matchResult1 matchResult2 matchResult3 |
-	matcher := {(#a
-		-> (FASTReturnStatement with: {(FASTStringLiteral with: {'4'})}))}
-		asMatcher.
+	matcher := {((FASTReturnStatement
+		with: {(FASTStringLiteral with: {'4'})}) named: #a)} asMatcher.
 	matchResult1 := matcher
 		match:
 			(self
@@ -18,6 +17,5 @@ testMatchSavedAssociation
 				productFASTPharo: PTPPatternMatcherTest >> #methodTestReturnString).
 	self assert: matchResult1 isMatch.
 	self assert: (matchResult1 at: #a) class equals: FASTReturnStatement.
-	self assert: matchResult2 isMatch.
-	self assert: (matchResult2 at: #a) class equals: FASTReturnStatement.
+	self deny: matchResult2 isMatch.
 	self deny: matchResult3 isMatch

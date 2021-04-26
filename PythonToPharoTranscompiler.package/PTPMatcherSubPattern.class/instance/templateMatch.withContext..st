@@ -1,5 +1,5 @@
 accessing
-match: aValue withContext: aContext
+templateMatch: aValue withContext: aContext
 	^ subPatterns
 		allSatisfy: [ :pattern | 
 			"(aValue mooseDescription allPrimitiveProperties
