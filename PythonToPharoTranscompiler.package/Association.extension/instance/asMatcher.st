@@ -1,9 +1,7 @@
 *PythonToPharoTranscompiler
 asMatcher
-	^ self value asMatcher
-		savedSelector: self key;
-		"^ PTPMatcherSaveValue new
-		key: self key;
-		value: self value asMatcher;
-		yourself"
-			yourself
+	^ PTPMatcherSubPatternWrapper new
+		selector: self key;
+		matcherModel: self value asMatcher;
+		yourself
+

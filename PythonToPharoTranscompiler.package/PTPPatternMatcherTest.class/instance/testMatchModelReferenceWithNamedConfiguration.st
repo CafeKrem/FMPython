@@ -1,15 +1,14 @@
 tests
 testMatchModelReferenceWithNamedConfiguration
 	| pattern model1 model2 |
-	pattern := {(#a
-		->
-			(FASTExpressionStatement
+	pattern := {((FASTExpressionStatement
+		with:
+			{(FASTPharoCascade
 				with:
-					{(FASTPharoCascade
+					{(FASTPharoMessageSend
 						with:
-							{(100 named: #receiver).
-							(FASTPharoMessageSend with: {('klm' named: #selector)})})}))}
-		asMatcher.
+							{(#receiver -> 100).
+							(#selector -> 'klm')})})}) named: #a)} asMatcher.
 	model1 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestMultipleChildrenNamed.
 	model2 := self

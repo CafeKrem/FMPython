@@ -2,12 +2,12 @@ tests
 testJokerMatcher
 	| pattern pattern1 pattern2 model model1 model2 matchResult matchResult2 pattern3 |
 	pattern := {(FASTExpressionStatement with: {1}).
-	(#joker -> JokerMatcher new)} asMatcher.
-	pattern1 := {(#joker -> JokerMatcher new).
+	(JokerMatcher new named: #joker)} asMatcher.
+	pattern1 := {(JokerMatcher new named: #joker).
 	(FASTExpressionStatement with: {100})} asMatcher.
-	pattern2 := {(#first -> JokerMatcher new).
+	pattern2 := {(JokerMatcher new named: #first).
 	$*.
-	(#last -> JokerMatcher new)} asMatcher.
+	(JokerMatcher new named: #last)} asMatcher.
 	pattern3 := {JokerMatcher new.
 	(FASTExpressionStatement with: {2}).
 	(FASTExpressionStatement with: {99})} asMatcher.
