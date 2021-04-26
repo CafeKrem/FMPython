@@ -14,7 +14,9 @@ match: aValue withContext: aContext
 				ifNil: [ self save: (self pop: aValue) inContext: aContext.
 					next match: aValue withContext: aContext ]
 				ifNotNil: [ previous isEllipsis
-						ifTrue: [ (next match: aValue allButFirst withContext: aContext)
+						ifTrue: [ (next
+								match: (LinkedList newFrom: aValue allButFirst)
+								withContext: aContext)
 								ifTrue: [ self save: (self pop: aValue) inContext: aContext.
 									true ]
 								ifFalse: [ false ] ]
