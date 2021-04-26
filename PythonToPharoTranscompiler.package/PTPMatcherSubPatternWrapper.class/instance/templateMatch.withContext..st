@@ -6,9 +6,12 @@ templateMatch: aValue withContext: aContext
 				ifFalse: [ aValue children
 						anySatisfy: [ :child | matcherModel match: child withContext: aContext ] ]"
 					aValue children
-						anySatisfy: [ :child | matcherModel match: child withContext: aContext ]
-					"
+						anySatisfy: [ :child | "
 						ifFalse: [ aValue children
-								anySatisfy: [ :child | self match: child withContext: aContext ] ]" ] ]
-		ifNotNil:
-			[ matcherModel match: (aValue perform: selector) withContext: aContext ]
+								anySatisfy: [ :child | self match: child withContext: aContext ] ]" matcherModel match: child withContext: aContext ] ] ]
+		ifNotNil: [ matcherModel
+				match:
+					([ (aValue class slotNamed: selector) read: aValue ]
+						on: Error
+						do: [ aValue perform: selector ])
+				withContext: aContext ]

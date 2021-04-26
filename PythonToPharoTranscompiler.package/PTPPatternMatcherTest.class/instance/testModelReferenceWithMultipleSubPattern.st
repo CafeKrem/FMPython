@@ -1,11 +1,9 @@
 tests
 testModelReferenceWithMultipleSubPattern
 	| pattern model1 model2 model3 |
-	pattern := {(#a
-		->
-			(FASTExpressionStatement
-				with: {(FASTPharoAssignmentExpression with: {'klm' . 100})}))}
-		asMatcher.
+	pattern := {((FASTExpressionStatement
+		with: {(FASTPharoAssignmentExpression with: {'klm' . 100})})
+		named: #a)} asMatcher.
 	model1 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestAssignement.
 	model2 := self
