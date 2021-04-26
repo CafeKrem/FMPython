@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"key",
-		"value"
-	],
-	"name" : "PTPMatcherSaveValue",
+	"instvars" : [ ],
+	"name" : "EllipsisMatcher",
 	"type" : "normal"
 }

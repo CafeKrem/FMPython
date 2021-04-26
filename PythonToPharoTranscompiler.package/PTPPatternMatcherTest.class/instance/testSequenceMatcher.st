@@ -1,21 +1,25 @@
 tests
 testSequenceMatcher
-	| pattern model0 context model1 model2 |
-	pattern := {(#block -> FASTPharoBlockExpression).
-	(#int -> 100).
-	(#str -> FASTStringLiteral)} asMatcher.
+	| pattern model0 model1 model2 mathResult2 matchResult2 |
+	pattern := {(#block
+		-> (FASTExpressionStatement with: {FASTPharoBlockExpression})).
+	(#int -> (FASTExpressionStatement with: 100)).
+	(#str -> (FASTExpressionStatement with: {FASTStringLiteral}))}
+		asMatcher.
 	model0 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestSequence.
 	model1 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestSequenceIncomplete.
 	model2 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestSequenceDirectMatch.
-	self assert: (pattern match: model0) isMatch.
-	context := (pattern match: model0) context.
-	self
-		assert: (context at: #block) class
-		equals: FASTPharoBlockExpression.
-	self assert: (context at: #int) value equals: 100.
-	self assert: (context at: #str) value equals: 'coucou'.
+	self deny: (pattern match: model0) isMatch.
 	self deny: (pattern match: model1) isMatch.
-	self assert: (pattern match: model2) isMatch
+	mathResult2 := pattern match: model2.
+	self assert: mathResult2 isMatch.
+	self
+		assert: (mathResult2 at: #block) expression class
+		equals: FASTPharoBlockExpression.
+	self assert: (mathResult2 at: #int) expression value equals: 100.
+	self
+		assert: (mathResult2 at: #str) expression class
+		equals: FASTStringLiteral
