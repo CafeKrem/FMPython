@@ -1,9 +1,8 @@
 tests
 testMatchSavedAssociation
 	| matchResult1 matchResult2 matchResult3 |
-	matcher := {(#a
-		-> (FASTReturnStatement with: {(FASTStringLiteral with: {'4'})}))}
-		asMatcher.
+	matcher := {((FASTReturnStatement
+		with: {(FASTStringLiteral with: {'4'})}) named: #a)} asMatcher.
 	matchResult1 := matcher
 		match:
 			(self

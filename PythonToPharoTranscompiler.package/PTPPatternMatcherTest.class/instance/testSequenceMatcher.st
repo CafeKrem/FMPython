@@ -1,10 +1,10 @@
 tests
 testSequenceMatcher
 	| pattern model0 model1 model2 mathResult2 matchResult2 |
-	pattern := {(#block
-		-> (FASTExpressionStatement with: {FASTPharoBlockExpression})).
-	(#int -> (FASTExpressionStatement with: 100)).
-	(#str -> (FASTExpressionStatement with: {FASTStringLiteral}))}
+	pattern := {((FASTExpressionStatement
+		with: {FASTPharoBlockExpression}) named: #block).
+	((FASTExpressionStatement with: 100) named: #int).
+	((FASTExpressionStatement with: {FASTStringLiteral}) named: #str)}
 		asMatcher.
 	model0 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestSequence.
