@@ -1,8 +1,19 @@
 accessing
 match: aValue withContext: aContext
+	savedSelector
+		ifNotNil: [ :selector | 
+			(aContext at: selector)
+				ifNotNil: [ :item | 
+					(item MTLequalsTo: (self firstElementOf: aValue))
+						ifTrue: [ self save: (self pop: aValue) inContext: aContext.
+							next
+								ifNotNil: [ ^ next match: aValue withContext: aContext ]
+								ifNil: [ ^ true ] ]
+						ifFalse: [ ^ false ] ] ].
 	^ next
 		ifNil: [ previous
-				ifNil: [ self save: (self firstElementOf: aValue) inContext: aContext ]
+				ifNil: [ self save: (self firstElementOf: aValue) inContext: aContext.
+					true ]
 				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
 						ifTrue: [ aValue size == 1
 								ifTrue: [ self save: (self firstElementOf: aValue) inContext: aContext.
@@ -13,7 +24,7 @@ match: aValue withContext: aContext
 		ifNotNil: [ previous
 				ifNil: [ self save: (self pop: aValue) inContext: aContext.
 					next match: aValue withContext: aContext ]
-				ifNotNil: [ previous isEllipsis
+				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
 						ifTrue: [ (next
 								match: (LinkedList newFrom: aValue allButFirst)
 								withContext: aContext)

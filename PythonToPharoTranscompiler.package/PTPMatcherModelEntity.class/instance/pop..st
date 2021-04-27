@@ -1,5 +1,7 @@
 accessing
 pop: aCollection
 	^ aCollection isCollection
-		ifTrue: [ aCollection removeFirst  ]
+		ifTrue: [ (aCollection isKindOf: LinkedList)
+				ifTrue: [ aCollection removeFirst ]
+				ifFalse: [ (LinkedList newFrom: aCollection) removeFirst ] ]
 		ifFalse: [ aCollection ]
