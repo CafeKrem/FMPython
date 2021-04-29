@@ -1,3 +1,5 @@
 private-running
 templateMatch: aFASTExpressionStatement withContext: aPTPMatcherResult
-	^ true 
+	"not use"
+
+	self halt
