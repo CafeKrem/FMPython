@@ -1,3 +1,0 @@
-transformationModel
-asMatcher
-	^ self

@@ -1,6 +1,6 @@
 tests
 testJokerMatcher
-	| pattern pattern1 pattern2 model model1 model2 matchResult matchResult2 pattern3 |
+	| pattern pattern1 pattern2 model model1 matchResult matchResult2 pattern3 |
 	pattern := {(FASTExpressionStatement with: {1}).
 	(JokerMatcher new named: #joker)} asMatcher.
 	pattern1 := {(JokerMatcher new named: #joker).

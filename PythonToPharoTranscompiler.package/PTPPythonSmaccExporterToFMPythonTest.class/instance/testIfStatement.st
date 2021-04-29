@@ -3,9 +3,7 @@ testIfStatement
 	| if |
 	self skip.
 	self flag: 'Modifier la gramaire'.
-	
 	smaccPythonModel := self parsePythonString: self ifStatementPython.
-
 	fmPython := smaccPythonVisitor visit: smaccPythonModel.
 	if := fmPython statements first.
 	self assert: fmPython statements size equals: 1.
@@ -17,7 +15,7 @@ testIfStatement
 				yourself).
 	self assert: if body size equals: 1.
 	self assert: if body first expr equals: 100.
-	self assert: if elif notNil.
+	self assert: if elif isNotNil.
 	self
 		assert: if elif cond
 		equals:

@@ -1,6 +1,6 @@
 visit
 visitFuncdef: aPyFuncdefNode
-	| parameters declaration |
+	| parameters |
 	parameters := aPyFuncdefNode parameters acceptVisitor: self.
 	^ FastPythonFunctionDeclaration new
 		parameters: parameters;

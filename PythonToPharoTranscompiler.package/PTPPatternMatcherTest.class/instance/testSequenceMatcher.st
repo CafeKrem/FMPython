@@ -1,6 +1,6 @@
 tests
 testSequenceMatcher
-	| pattern model0 model1 model2 mathResult2 matchResult2 |
+	| pattern model0 model1 model2 mathResult2 |
 	pattern := {((FASTExpressionStatement
 		with: {FASTPharoBlockExpression}) named: #block).
 	((FASTExpressionStatement with: 100) named: #int).

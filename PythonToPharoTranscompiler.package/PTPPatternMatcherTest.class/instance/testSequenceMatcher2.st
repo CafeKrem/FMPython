@@ -1,6 +1,6 @@
 tests
 testSequenceMatcher2
-	| pattern model0 context model1 model2 |
+	| pattern model0 model1 model2 |
 	pattern := {FASTPharoBlockExpression.
 	100.
 	FASTStringLiteral} asMatcher.
