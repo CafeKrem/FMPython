@@ -2,7 +2,6 @@ private-running
 match: aCollection withContext: aContext
 	| value isNextMatch |
 	matchedNodes := OrderedCollection new.
-	"value := self firstElementOf: aCollection."
 	next
 		ifNil: [ self save: aCollection inContext: aContext.
 			isNextMatch := true ]

@@ -12,15 +12,17 @@ match: aValue withContext: aContext
 						ifFalse: [ ^ false ] ] ].
 	^ next
 		ifNil: [ previous
-				ifNil: [ self save: (self firstElementOf: aValue) inContext: aContext.
-					true ]
 				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
 						ifTrue: [ aValue size == 1
-								ifTrue: [ self save: (self firstElementOf: aValue) inContext: aContext.
-									true ]
+								ifFalse: [ ^ false ] ] ].
+			self nextNilPreviousNil: aValue context: aContext
+			"previous
+				ifNil: [ self nextNilPreviousNil: aValue context: aContext ]
+				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
+						ifTrue: [ aValue size == 1
+								ifTrue: [ self nextNilPreviousNil: aValue context: aContext ]
 								ifFalse: [ false ] ]
-						ifFalse: [ self save: (self firstElementOf: aValue) inContext: aContext.
-							true ] ] ]
+						ifFalse: [ self nextNilPreviousNil: aValue context: aContext ] ] " ]
 		ifNotNil: [ previous
 				ifNil: [ self save: (self pop: aValue) inContext: aContext.
 					next match: aValue withContext: aContext ]
