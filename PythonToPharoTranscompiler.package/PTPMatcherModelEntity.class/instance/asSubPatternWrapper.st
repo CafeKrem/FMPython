@@ -1,4 +1,4 @@
-transformationLanguage
+converting
 asSubPatternWrapper
 	^ PTPMatcherSubPatternWrapper new
 		matcherModel: self;

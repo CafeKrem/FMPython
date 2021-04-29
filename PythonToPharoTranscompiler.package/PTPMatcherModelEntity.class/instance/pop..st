@@ -1,4 +1,4 @@
-accessing
+util
 pop: aCollection
 	^ aCollection isCollection
 		ifTrue: [ (aCollection isKindOf: LinkedList)

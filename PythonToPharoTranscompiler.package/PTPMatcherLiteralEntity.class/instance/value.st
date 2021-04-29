@@ -1,3 +1,3 @@
-evaluating
+accessing
 value
 	^value 

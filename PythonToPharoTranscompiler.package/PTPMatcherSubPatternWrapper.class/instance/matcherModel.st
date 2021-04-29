@@ -1,3 +1,3 @@
-accessing
+accessor
 matcherModel
 	^ matcherModel

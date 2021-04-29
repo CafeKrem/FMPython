@@ -1,3 +1,3 @@
-instance creation
+API-patternDSL
 named: aString 
 	self savedSelector: aString 

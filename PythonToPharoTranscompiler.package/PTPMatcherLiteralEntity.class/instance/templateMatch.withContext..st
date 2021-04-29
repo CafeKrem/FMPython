@@ -1,4 +1,4 @@
-accessing
+private-running
 templateMatch: aValue withContext: aPTPMatcherResult
 	^ value = aValue
 		or: [ (aValue class allSlots collect: [ :each | each read: aValue ])

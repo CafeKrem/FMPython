@@ -1,4 +1,4 @@
-as yet unclassified
+private-running
 match: aCollection withContext: aContext
 	| aValue |
 	aValue := self firstElementOf: aCollection.

@@ -1,4 +1,4 @@
-as yet unclassified
+private-running
 match: aCollection withContext: aContext
 	| value isNextMatch |
 	matchedNodes := OrderedCollection new.
