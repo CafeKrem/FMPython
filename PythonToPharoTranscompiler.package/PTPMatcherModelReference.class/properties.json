@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"modelDescription",
-		"configuration",
-		"cardinality"
+		"configuration"
 	],
 	"name" : "PTPMatcherModelReference",
 	"type" : "normal"
