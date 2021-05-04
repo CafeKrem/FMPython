@@ -8,4 +8,6 @@ asMatcher
 			first next: each.
 			each previous: first.
 			first := each ].
-	^ tmp first
+	^ ListMatcher new
+		matcher: tmp first;
+		yourself

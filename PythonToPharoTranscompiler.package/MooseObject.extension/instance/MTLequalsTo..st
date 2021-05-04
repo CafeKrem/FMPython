@@ -14,6 +14,7 @@ MTLequalsTo: aValue
 		allSatisfy: [ :each | 
 			aValue children
 				detect: [ :valueChild | each MTLequalsTo: valueChild ]
+				ifFound: [ true ]
 				ifNone: [ false ] ])
 		ifFalse: [ ^ false ].
 	^ true

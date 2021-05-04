@@ -1,9 +1,10 @@
-private-running
-match: aValue withContext: aContext
+as yet unclassified
+hasMatch: aValue withContext: aContext
 	savedSelector
 		ifNotNil: [ :selector | 
 			(aContext at: selector)
 				ifNotNil: [ :item | 
+					1 halt.
 					(item MTLequalsTo: (self firstElementOf: aValue))
 						ifTrue: [ self save: (self pop: aValue) inContext: aContext.
 							next
@@ -15,16 +16,13 @@ match: aValue withContext: aContext
 				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
 						ifTrue: [ aValue size == 1
 								ifFalse: [ ^ false ] ] ].
-			self save: (self firstElementOf: aValue) inContext: aContext.
 			true ]
 		ifNotNil: [ previous
 				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
-						ifTrue: [ (next
+						ifTrue: [ 1 haltOnce.
+							(next
 								match: (LinkedList newFrom: aValue allButFirst)
 								withContext: aContext)
-								ifTrue: [ self save: (self pop: aValue) inContext: aContext.
-									^ true ]
+								ifTrue: [ ^ true ]
 								ifFalse: [ ^ false ] ] ].
-			self save: (self pop: aValue) inContext: aContext.
-			true
-			"next match: aValue withContext: aContext" ]
+			true ]

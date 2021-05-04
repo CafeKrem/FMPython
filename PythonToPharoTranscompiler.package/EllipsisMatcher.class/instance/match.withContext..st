@@ -5,8 +5,8 @@ match: aCollection withContext: aContext
 	next
 		ifNil: [ self save: aCollection inContext: aContext.
 			isNextMatch := true ]
-		ifNotNil: [ [ aCollection isEmpty
-				or: [ isNextMatch := next match: aCollection withContext: aContext ] ]
+		ifNotNil: [1haltOnce. [ aCollection isEmpty
+				or: [ isNextMatch := next hasMatch: aCollection withContext: aContext ] ]
 				whileFalse: [ value := self pop: aCollection.
 					matchedNodes add: value ].
 			self save: matchedNodes inContext: aContext ].
