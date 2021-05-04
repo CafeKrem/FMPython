@@ -1,5 +1,6 @@
 private-running
 templateMatch: aValue withContext: aContext
+
 	^ selector
 		ifNil: [ (matcherModel match: aValue withContext: aContext)
 				or: [ aValue children

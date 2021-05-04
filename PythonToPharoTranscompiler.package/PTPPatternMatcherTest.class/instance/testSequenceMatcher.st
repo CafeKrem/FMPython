@@ -6,6 +6,7 @@ testSequenceMatcher
 	((FASTExpressionStatement with: 100) named: #int).
 	((FASTExpressionStatement with: {FASTStringLiteral}) named: #str)}
 		asMatcher.
+		
 	model0 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestSequence.
 	model1 := self

@@ -1,5 +1,3 @@
 private-running
-templateMatch: aFASTExpressionStatement withContext: aPTPMatcherResult
-	"not use"
-
-	self halt
+templateMatch: aValue withContext: aContext
+	^ self hasMatch: aValue withContext: aContext
