@@ -20,7 +20,11 @@ match: aCollection withContext: aContext
 		ifTrue: [ 
 			(aValue isKindOf: String)
 				ifTrue: [ 
-				aCollection at: 1 put: (aValue allButFirst: self value size) ]
+					(aCollection isKindOf: String)
+						ifTrue: [ 
+						aCollection become: (aValue allButFirst: self value size) ]
+						ifFalse: [ 
+						aCollection at: 1 put: (aValue allButFirst: self value size) ] ]
 				ifFalse: [ self save: (self pop: aCollection) inContext: aContext ].
 
 			^ true ]
