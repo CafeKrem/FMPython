@@ -1,3 +1,3 @@
 private-running
 templateMatch: aCollection withContext: aContext
-	^self subclassResponsibility 
+	^ self subclassResponsibility

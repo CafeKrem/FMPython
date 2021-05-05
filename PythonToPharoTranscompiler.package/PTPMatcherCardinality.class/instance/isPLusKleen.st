@@ -1,3 +1,0 @@
-testing
-isPLusKleen
-	^ cardinality = '+'

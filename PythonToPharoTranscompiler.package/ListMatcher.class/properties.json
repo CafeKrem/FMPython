@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cardinality"
+		"matcher"
 	],
-	"name" : "PTPMatcherCardinality",
+	"name" : "ListMatcher",
 	"type" : "normal"
 }
