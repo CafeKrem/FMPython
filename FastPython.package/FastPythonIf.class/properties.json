@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FASTStatement",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#elif => FMOne type: #FastPythonIf opposite: #ifParent",
+		"#ifParent => FMMany type: #FastPythonIf opposite: #elif"
+	],
+	"name" : "FastPythonIf",
+	"type" : "normal"
+}

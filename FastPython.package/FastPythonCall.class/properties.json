@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FASTExpression",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#callee => FMProperty"
+	],
+	"name" : "FastPythonCall",
+	"type" : "normal"
+}
