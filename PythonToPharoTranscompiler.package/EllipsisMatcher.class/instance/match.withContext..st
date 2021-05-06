@@ -1,13 +1,18 @@
 private-running
 match: aCollection withContext: aContext
+
 	| value isNextMatch |
 	matchedNodes := OrderedCollection new.
 	next
-		ifNil: [ self save: aCollection inContext: aContext.
+		ifNil: [ 
+			self save: aCollection inContext: aContext.
 			isNextMatch := true ]
-		ifNotNil: [ [ aCollection isEmpty
-				or: [ isNextMatch := next hasMatch: aCollection withContext: aContext ] ]
-				whileFalse: [ value := self pop: aCollection.
+		ifNotNil: [ 
+			[ 
+			aCollection isEmpty or: [ 
+				isNextMatch := next hasMatch: aCollection withContext: aContext ] ] 
+				whileFalse: [ 
+					value := self pop: aCollection.
 					matchedNodes add: value ].
 			self save: matchedNodes inContext: aContext ].
 	^ isNextMatch

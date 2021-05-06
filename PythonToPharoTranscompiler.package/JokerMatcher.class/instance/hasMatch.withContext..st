@@ -18,7 +18,7 @@ hasMatch: aValue withContext: aContext
 			true ]
 		ifNotNil: [ previous
 				ifNotNil: [ (previous isEllipsis or: [ previous isJoker ])
-						ifTrue: [ ^ next
+						ifTrue: [ self flag: #replaceByHasNext.^ next
 								match: (LinkedList newFrom: aValue allButFirst)
 								withContext: aContext ] ].
 			true ]
