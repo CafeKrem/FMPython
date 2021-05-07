@@ -1,5 +1,6 @@
 private-running
 match: aCollection withContext: aContext
+
 	"| aValue |
 	aValue := self firstElementOf: aCollection.
 	next
@@ -16,6 +17,15 @@ match: aCollection withContext: aContext
 	| aValue |
 	aValue := self firstElementOf: aCollection.
 	(self templateMatch: aValue withContext: aContext)
-		ifTrue: [ self save: (self pop: aCollection) inContext: aContext.
+		ifTrue: [ 
+			(aValue isKindOf: String)
+				ifTrue: [ 
+					(aCollection isKindOf: String)
+						ifTrue: [ 
+						aCollection become: (aValue allButFirst: self value size) ]
+						ifFalse: [ 
+						aCollection at: 1 put: (aValue allButFirst: self value size) ] ]
+				ifFalse: [ self save: (self pop: aCollection) inContext: aContext ].
+
 			^ true ]
 		ifFalse: [ ^ false ]
