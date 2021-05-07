@@ -18,9 +18,9 @@ match: aCollection withContext: aContext
 	aValue := self firstElementOf: aCollection.
 	(self templateMatch: aValue withContext: aContext)
 		ifTrue: [ 
-			(aValue isKindOf: String)
+			aValue isString
 				ifTrue: [ 
-					(aCollection isKindOf: String)
+					aCollection isString
 						ifTrue: [ 
 						aCollection become: (aValue allButFirst: self value size) ]
 						ifFalse: [ 
