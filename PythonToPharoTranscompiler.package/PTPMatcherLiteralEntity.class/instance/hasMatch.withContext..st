@@ -1,5 +1,5 @@
 private-running
-templateMatch: aValue withContext: aPTPMatcherResult
+hasMatch: aValue withContext: aContext
 
 	^ value = aValue or: [ 
 		  (aValue class allSlots collect: [ :each | each read: aValue ]) 
