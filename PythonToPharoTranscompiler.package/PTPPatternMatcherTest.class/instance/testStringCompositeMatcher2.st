@@ -2,10 +2,10 @@ tests
 testStringCompositeMatcher2
 
 	| pattern model matchResult |
-	pattern := { (FASTExpressionStatement with:
-		            { (#expression -> (FASTPharoMessageSend with:
+	pattern := { (FASTExpressionStatement suchAs:
+		            { (#expression -> (FASTPharoMessageSend suchAs:
 			              { (#selector
-			               -> (FASTPharoSelector with: { (#name -> { 
+			               -> (FASTPharoSelector suchAs: { (#name -> { 
 						                 'set'.
 						                 ($* named: #x) }) })) })) }) } asMatcher.
 

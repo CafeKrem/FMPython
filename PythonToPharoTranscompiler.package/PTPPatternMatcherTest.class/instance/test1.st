@@ -2,18 +2,16 @@ tests
 test1
 
 	| pattern model matchResult |
-	pattern := { (RBSequenceNode with:
-		            { (#statements -> (RBMessageNode with: { 
-				              (#receiver -> (RBBlockNode with:
+	pattern := { (RBSequenceNode suchAs:
+		            { (#statements -> (RBMessageNode suchAs: { 
+				              (#receiver -> (RBBlockNode suchAs:
 					                { (#body
-					                 -> (RBSequenceNode with: { (#statements -> { 
+					                 -> (RBSequenceNode suchAs: { (#statements -> { 
 								                   ($* named: #a).
 								                   (JokerMatcher named: #cond) }) })) })).
 				              (#selector
-				               -> (RBSelectorNode with: { 'whileTrue:' })).
-				              (#arguments
-				               ->
-				               (RBBlockNode with:
+				               -> (RBSelectorNode suchAs: { 'whileTrue:' })).
+				              (#arguments -> (RBBlockNode suchAs:
 					                { (#body -> (RBSequenceNode named: #whileBlock)) })) })) }) }
 		           asMatcher.
 

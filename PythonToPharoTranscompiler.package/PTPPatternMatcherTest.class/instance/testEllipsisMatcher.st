@@ -2,9 +2,9 @@ tests
 testEllipsisMatcher
 	| pattern pattern1 model0 model1 matchResult matchResult1 model2 |
 	pattern := {($* named: #ellipsis).
-	(FASTExpressionStatement with: {100})} asMatcher.
+	(FASTExpressionStatement suchAs: {100})} asMatcher.
 	pattern1 := {(EllipsisMatcher new named: #ellipsis).
-	(FASTExpressionStatement with: {100})} asMatcher.
+	(FASTExpressionStatement suchAs: {100})} asMatcher.
 	model0 := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestEllipsisNode.
 	model1 := self

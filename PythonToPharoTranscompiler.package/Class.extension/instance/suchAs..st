@@ -1,5 +1,5 @@
 *PythonToPharoTranscompiler
-with: anObject
+suchAs: anObject
 	^ PTPMatcherModelReference
 		withClass: self
 		withConfiguration:
