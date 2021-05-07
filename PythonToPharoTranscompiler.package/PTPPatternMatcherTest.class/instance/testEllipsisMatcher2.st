@@ -3,7 +3,7 @@ testEllipsisMatcher2
 	| pattern model matcherResult |
 	pattern := {(JokerMatcher new named: #joker).
 	($* named: #before100).
-	(FASTExpressionStatement with: {100}).
+	(FASTExpressionStatement suchAs: {100}).
 	($* named: #after100)} asMatcher.
 	model := self
 		productFASTPharo: PTPPatternMatcherTest >> #methodTestEllipsisNode3.
