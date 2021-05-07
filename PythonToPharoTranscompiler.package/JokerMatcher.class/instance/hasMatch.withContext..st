@@ -14,7 +14,8 @@ hasMatch: aValue withContext: aContext
 			  previous ifNotNil: [ 
 				  (previous isEllipsis or: [ previous isJoker ]) ifTrue: [ 
 					  self flag: #replaceByHasNext.
+					  1 haltIf: [ (aValue isKindOf: OrderedCollection) not ].
 					  ^ next
-						    match: (LinkedList newFrom: aValue allButFirst)
+						    match: ("OrderedCollection newFrom:" aValue allButFirst)
 						    withContext: aContext ] ].
 			  true ]
