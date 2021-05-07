@@ -13,8 +13,8 @@ templateMatch: aValue withContext: aContext
 			                  (aValue class slotNamed: selector) read: aValue ]
 				                  on: Error
 				                  do: [ aValue perform: selector ] copy.
-			  attributeTmp := ((attributeTmp isKindOf: String) or: [ 
-				                   (attributeTmp isKindOf: Collection) not ])
+			  attributeTmp := (attributeTmp isString or: [ 
+				                   attributeTmp isCollection not ])
 				                  ifTrue: [ attributeTmp ]
 				                  ifFalse: [ 
 				                  OrderedCollection newFrom: attributeTmp ].
