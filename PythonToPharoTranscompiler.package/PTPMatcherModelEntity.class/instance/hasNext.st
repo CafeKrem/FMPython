@@ -1,3 +1,3 @@
-as yet unclassified
+private-running
 hasNext
 	^ next isNotNil

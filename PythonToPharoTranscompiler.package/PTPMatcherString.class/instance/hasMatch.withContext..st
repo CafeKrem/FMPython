@@ -1,7 +1,7 @@
 private-running
-templateMatch: aValue withContext: aContext
+hasMatch: aValue withContext: aContext
 
-	^ (super templateMatch: aValue withContext: aContext) or: [ 
+	^ (super hasMatch: aValue withContext: aContext) or: [ 
 		  aValue isString
 			  ifTrue: [ aValue beginsWithEmpty: value caseSensitive: true ]
 			  ifFalse: [ false ] ]

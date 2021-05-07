@@ -1,5 +1,12 @@
 as yet unclassified
-hasMatch: aCollection withContext: aContext
-	^ self
+hasMatch: aValue withContext: aContext
+
+	"^ self
 		templateMatch: (self firstElementOf: aCollection)
-		withContext: aContext
+		withContext: aContext"
+
+	| value |
+	value := self firstElementOf: aValue.
+	^ (value isKindOf: modelDescription)
+		  ifTrue: [ configuration match: value withContext: aContext ]
+		  ifFalse: [ false ]

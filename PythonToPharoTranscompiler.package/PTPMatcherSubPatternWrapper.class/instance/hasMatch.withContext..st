@@ -1,5 +1,5 @@
 private-running
-templateMatch: aValue withContext: aContext
+hasMatch: aValue withContext: aContext
 
 	| attributeTmp |
 	self flag: #warning.
