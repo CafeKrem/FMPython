@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmaccPythonToFastPython",
+	"classinstvars" : [
+		"operationSymbolPool"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FMPythonFactory",
+	"type" : "normal"
+}

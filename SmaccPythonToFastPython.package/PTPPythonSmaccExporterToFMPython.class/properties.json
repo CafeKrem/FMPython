@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmaccPythonToFastPython",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootModel"
+	],
+	"name" : "PTPPythonSmaccExporterToFMPython",
+	"type" : "normal"
+}

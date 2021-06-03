@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmaccPythonToFastPython-Tests",
+	"classinstvars" : [
+		"smaccPythonVisitor"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"smaccPythonVisitor",
+		"smaccPythonModel",
+		"fmPython"
+	],
+	"name" : "PTPPythonSmaccExporterToFMPythonTest",
+	"type" : "normal"
+}
