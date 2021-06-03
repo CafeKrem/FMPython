@@ -1,3 +1,0 @@
-testing
-isEllipsis
-	^ false

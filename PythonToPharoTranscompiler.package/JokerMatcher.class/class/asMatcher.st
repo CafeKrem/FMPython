@@ -1,3 +1,0 @@
-transformationLanguage
-asMatcher
-	^ self new
