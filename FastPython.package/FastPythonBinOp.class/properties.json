@@ -1,11 +1,15 @@
 {
+	"classtraitcomposition" : "FASTTExpression classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#op => FMOne type: #FastPythonOperationSymbol opposite: #binOp"
+	],
+	"name" : "FastPythonBinOp",
 	"commentStamp" : "",
-	"super" : "FASTExpression",
-	"category" : "FastPython-Entities",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTExpression",
+	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "FastPythonBinOp",
-	"type" : "normal"
+	"category" : "FastPython-Entities"
 }

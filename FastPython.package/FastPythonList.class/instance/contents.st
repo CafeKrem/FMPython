@@ -1,8 +1,8 @@
 accessing
 contents
-	"Relation named: #contents type: #FASTExpression opposite: #list"
+	"Relation named: #contents type: #FASTTExpression opposite: #list"
 
 	<generated>
 	<derived>
-	<FMProperty: #contents type: #FASTExpression opposite: #list>
+	<FMProperty: #contents type: #FASTTExpression opposite: #list>
 	^ self attributeAt: #contents ifAbsentPut: [ FMMultivalueLink on: self opposite: #list: ]

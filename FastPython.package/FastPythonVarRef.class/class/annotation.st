@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #VarRef super: #FASTVariableExpression>
+	<FMClass: #VarRef super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

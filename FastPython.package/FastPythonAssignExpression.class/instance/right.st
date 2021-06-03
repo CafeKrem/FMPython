@@ -1,7 +1,7 @@
 accessing
 right
-	"Relation named: #right type: #FASTExpression opposite: #assignExpression"
+	"Relation named: #right type: #FASTTExpression opposite: #assignExpression"
 
 	<generated>
-	<FMProperty: #right type: #FASTExpression opposite: #assignExpression>
+	<FMProperty: #right type: #FASTTExpression opposite: #assignExpression>
 	^ self attributeAt: #right ifAbsent: [ nil ]

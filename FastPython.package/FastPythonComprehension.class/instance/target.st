@@ -1,7 +1,7 @@
 accessing
 target
-	"Relation named: #target type: #FASTExpression opposite: #parentTarget"
+	"Relation named: #target type: #FASTTExpression opposite: #parentTarget"
 
 	<generated>
-	<FMProperty: #target type: #FASTExpression opposite: #parentTarget>
+	<FMProperty: #target type: #FASTTExpression opposite: #parentTarget>
 	^ self attributeAt: #target ifAbsent: [ nil ]

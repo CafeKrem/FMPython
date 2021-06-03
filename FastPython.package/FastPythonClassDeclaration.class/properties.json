@@ -1,13 +1,13 @@
 {
-	"classtraitcomposition" : "FMXPythonAsynchronable classTrait + FMXPythonDeclaration classTrait",
+	"classtraitcomposition" : "FASTTStatement classTrait + FastPythonAsynchronable classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#superClasses => FMMany type: #FastPythonVarRef opposite: #classDeclaration"
 	],
 	"name" : "FastPythonClassDeclaration",
 	"commentStamp" : "",
-	"super" : "FASTStatement",
-	"traitcomposition" : "FMXPythonAsynchronable + FMXPythonDeclaration",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTStatement + FastPythonAsynchronable",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

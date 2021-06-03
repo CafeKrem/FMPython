@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #BinOp super: #FASTExpression>
+	<FMClass: #BinOp super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

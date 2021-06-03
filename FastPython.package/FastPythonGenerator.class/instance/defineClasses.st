@@ -3,23 +3,8 @@ defineClasses
 
 	super defineClasses.
 
-	statement := self remoteEntity: #Statement withPrefix: #FAST.
-	expression := self remoteEntity: #Expression withPrefix: #FAST.
-	literal := self remoteEntity: #Literal withPrefix: #FAST.
-	boolean := self remoteEntity: #BooleanLiteral withPrefix: #FAST.
-	string := self remoteEntity: #String withPrefix: #FAST.
-	fastVarRef := self
-		              remoteEntity: #VariableExpression
-		              withPrefix: #FAST.
-	null := self remoteEntity: #NullPointerLiteral withPrefix: #FAST.
-	expressionStatement := self
-		                       remoteEntity: #ExpressionStatement
-		                       withPrefix: #FAST.
-	return := self remoteEntity: #ReturnStatement withPrefix: #FAST.
-
 
 	varRef := builder newClassNamed: #VarRef.
-
 
 	none := builder newClassNamed: #None.
 	itemDict := builder newClassNamed: #ItemDict.
@@ -76,16 +61,14 @@ defineClasses
 	generatorExp := builder newClassNamed: #GeneratorExp.
 	tuple := builder newClassNamed: #Tuple.
 
+
+	operationSymbol := builder newClassNamed: #OperationSymbol.
+	parameter := builder newClassNamed: #Parameter
+	"	                 
 	
-	operationSymbol := self
-		                   remoteEntity: #OperationSymbol
-		                   withPrefix: FamixPythonGenerator prefix.
-	parameter := self
-		             remoteEntity: #Parameter
-		             withPrefix: FamixPythonGenerator prefix.
 	sClass := self
 		          remoteEntity: #SClass
 		          withPrefix: FamixPythonGenerator prefix.
 	sFunction := self
 		             remoteEntity: #SFunction
-		             withPrefix: FamixPythonGenerator prefix
+		             withPrefix: FamixPythonGenerator prefix"

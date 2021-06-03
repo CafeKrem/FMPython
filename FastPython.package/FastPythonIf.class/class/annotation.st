@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #If super: #FASTStatement>
+	<FMClass: #If super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

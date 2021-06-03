@@ -1,8 +1,8 @@
 accessing
 iterable
-	"Relation named: #iterable type: #FASTExpression opposite: #parentForIterable"
+	"Relation named: #iterable type: #FASTTExpression opposite: #parentForIterable"
 
 	<generated>
 	<derived>
-	<FMProperty: #iterable type: #FASTExpression opposite: #parentForIterable>
+	<FMProperty: #iterable type: #FASTTExpression opposite: #parentForIterable>
 	^ self attributeAt: #iterable ifAbsent: [ nil ]

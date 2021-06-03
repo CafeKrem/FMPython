@@ -1,13 +1,11 @@
 {
-	"classtraitcomposition" : "FMXPythonDeclaration classTrait",
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "FastPythonVarDeclaration",
-	"commentStamp" : "",
-	"super" : "FastPythonEntity",
-	"traitcomposition" : "FMXPythonDeclaration",
-	"type" : "normal",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"category" : "FastPython-Entities"
+	"type" : "normal"
 }

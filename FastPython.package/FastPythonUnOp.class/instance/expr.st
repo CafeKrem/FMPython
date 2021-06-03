@@ -1,7 +1,7 @@
 accessing
 expr
-	"Relation named: #expr type: #FASTExpression opposite: #unOp"
+	"Relation named: #expr type: #FASTTExpression opposite: #unOp"
 
 	<generated>
-	<FMProperty: #expr type: #FASTExpression opposite: #unOp>
+	<FMProperty: #expr type: #FASTTExpression opposite: #unOp>
 	^ self attributeAt: #expr ifAbsent: [ nil ]

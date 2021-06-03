@@ -1,7 +1,7 @@
 accessing
 cond
-	"Relation named: #cond type: #FASTExpression opposite: #ifExpression"
+	"Relation named: #cond type: #FASTTExpression opposite: #ifExpression"
 
 	<generated>
-	<FMProperty: #cond type: #FASTExpression opposite: #ifExpression>
+	<FMProperty: #cond type: #FASTTExpression opposite: #ifExpression>
 	^ self attributeAt: #cond ifAbsent: [ nil ]

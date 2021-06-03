@@ -71,10 +71,10 @@ defineRelations
 	<>- (expression property: #ifExpression).
 	(ifExpression property: #cond)
 	<>- (expression property: #ifExpression).
-	(sFunction property: #declaration)
-	- (functionDeclaration property: #sFunction).
-	(sClass property: #declaration)
-	- (classDeclaration property: #sClass).
+	"(sFunction property: #declaration)
+	- (functionDeclaration property: #sFunction)."
+	"(sClass property: #declaration)
+	- (classDeclaration property: #sClass)."
 	(lambda property: #body) <>- (expression property: #lambda).
 	(call property: #left) <>- (expression property: #call).
 	(call property: #arguments) <>-* (expression property: #call).
@@ -86,8 +86,8 @@ defineRelations
 	<>-* (statement property: #classDeclaration).
 	(classDeclaration property: #superClasses)
 	-* (varRef property: #classDeclaration).
-	(classDeclaration property: #sclass)
-	- (sClass property: #classDeclaration).
+	"(classDeclaration property: #sclass)
+	- (sClass property: #classDeclaration)."
 	(functionDeclaration property: #body)
 	<>-* (statement property: #functionDeclaration).
 	(functionDeclaration property: #decorateurs)

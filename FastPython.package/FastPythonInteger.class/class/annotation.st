@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #Integer super: #FASTLiteral>
+	<FMClass: #Integer super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

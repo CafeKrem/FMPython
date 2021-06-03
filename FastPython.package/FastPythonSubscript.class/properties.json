@@ -1,13 +1,13 @@
 {
-	"classtraitcomposition" : "FastPythonAssignedTarget classTrait",
+	"classtraitcomposition" : "FASTTExpression classTrait + FastPythonAssignedTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#index => FMOne type: #FastPythonSubscriptionIndex opposite: #parentSubscription"
 	],
 	"name" : "FastPythonSubscript",
 	"commentStamp" : "",
-	"super" : "FASTExpression",
-	"traitcomposition" : "FastPythonAssignedTarget",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTExpression + FastPythonAssignedTarget",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

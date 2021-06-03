@@ -1,7 +1,7 @@
 accessing
 value
-	"Relation named: #value type: #FASTExpression opposite: #subscript"
+	"Relation named: #value type: #FASTTExpression opposite: #subscript"
 
 	<generated>
-	<FMProperty: #value type: #FASTExpression opposite: #subscript>
+	<FMProperty: #value type: #FASTTExpression opposite: #subscript>
 	^ self attributeAt: #value ifAbsent: [ nil ]

@@ -1,7 +1,7 @@
 accessing
 expression
-	"Relation named: #expression type: #FASTExpression opposite: #yield"
+	"Relation named: #expression type: #FASTTExpression opposite: #yield"
 
 	<generated>
-	<FMProperty: #expression type: #FASTExpression opposite: #yield>
+	<FMProperty: #expression type: #FASTTExpression opposite: #yield>
 	^ self attributeAt: #expression ifAbsent: [ nil ]

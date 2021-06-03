@@ -1,7 +1,7 @@
 accessing
 key
-	"Relation named: #key type: #FASTExpression opposite: #itemDict"
+	"Relation named: #key type: #FASTTExpression opposite: #itemDict"
 
 	<generated>
-	<FMProperty: #key type: #FASTExpression opposite: #itemDict>
+	<FMProperty: #key type: #FASTTExpression opposite: #itemDict>
 	^ self attributeAt: #key ifAbsent: [ nil ]

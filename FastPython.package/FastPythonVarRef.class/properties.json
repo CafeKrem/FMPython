@@ -1,16 +1,17 @@
 {
-	"classtraitcomposition" : "FastPythonAssignedTarget classTrait",
+	"classtraitcomposition" : "FASTTVariableExpression classTrait + FastPythonAssignedTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#classDeclaration => FMOne type: #FastPythonClassDeclaration opposite: #superClasses",
 		"#exceptionAssociation => FMOne type: #FastPythonExceptionAssociation opposite: #allias",
 		"#global => FMOne type: #FastPythonGlobal opposite: #varRef",
+		"#name => FMProperty",
 		"#nonLocal => FMOne type: #FastPythonNonLocal opposite: #varRef"
 	],
 	"name" : "FastPythonVarRef",
 	"commentStamp" : "",
-	"super" : "FASTVariableExpression",
-	"traitcomposition" : "FastPythonAssignedTarget",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTVariableExpression + FastPythonAssignedTarget",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -25,13 +25,13 @@ defineHierarchy
 		<|-- classDeclaration;
 		<|-- functionDeclaration.
 
-	scopable
+	"scopable
 		<|-- for;
 		<|-- with;
-		<|-- comprehension.
+		<|-- comprehension."
 
 	expression --|> subscriptionIndex.
-	varDeclaration --|> declaration.
+	"varDeclaration --|> declaration."
 	slice --|> subscriptionIndex.
 
 	formattedValue --|> joinedStringItem.
@@ -48,8 +48,8 @@ defineHierarchy
 	with --|> asynchronable.
 	starred --|> expression.
 	joinedStr --|> expression.
-	classDeclaration --|> declaration.
-	functionDeclaration --|> declaration.
+	"classDeclaration --|> declaration.
+	functionDeclaration --|> declaration."
 	varRef --|> assignedTarget.
 	varRef --|> fastVarRef.
 	attributeNav --|> assignedTarget.

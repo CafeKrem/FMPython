@@ -1,7 +1,7 @@
 accessing
 conditional
-	"Relation named: #conditional type: #FASTExpression opposite: #assert"
+	"Relation named: #conditional type: #FASTTExpression opposite: #assert"
 
 	<generated>
-	<FMProperty: #conditional type: #FASTExpression opposite: #assert>
+	<FMProperty: #conditional type: #FASTTExpression opposite: #assert>
 	^ self attributeAt: #conditional ifAbsent: [ nil ]

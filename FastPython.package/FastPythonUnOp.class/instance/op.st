@@ -1,7 +1,6 @@
 accessing
 op
-	"Relation named: #op type: #FMXPythonOperationSymbol opposite: #unOp"
+	"Relation named: #op type: #FastPythonOperationSymbol opposite: #unOp"
 
 	<generated>
-	<FMProperty: #op type: #FMXPythonOperationSymbol opposite: #unOp>
-	^ self attributeAt: #op ifAbsent: [ nil ]
+	^ op

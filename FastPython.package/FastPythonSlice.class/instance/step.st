@@ -1,7 +1,7 @@
 accessing
 step
-	"Relation named: #step type: #FASTExpression opposite: #slice"
+	"Relation named: #step type: #FASTTExpression opposite: #slice"
 
 	<generated>
-	<FMProperty: #step type: #FASTExpression opposite: #slice>
+	<FMProperty: #step type: #FASTTExpression opposite: #slice>
 	^ self attributeAt: #step ifAbsent: [ nil ]

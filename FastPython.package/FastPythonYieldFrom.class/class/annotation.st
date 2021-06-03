@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #YieldFrom super: #FASTStatement>
+	<FMClass: #YieldFrom super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

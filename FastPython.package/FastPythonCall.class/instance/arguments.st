@@ -1,8 +1,8 @@
 accessing
 arguments
-	"Relation named: #arguments type: #FASTExpression opposite: #call"
+	"Relation named: #arguments type: #FASTTExpression opposite: #call"
 
 	<generated>
 	<derived>
-	<FMProperty: #arguments type: #FASTExpression opposite: #call>
+	<FMProperty: #arguments type: #FASTTExpression opposite: #call>
 	^ self attributeAt: #arguments ifAbsentPut: [ FMMultivalueLink on: self opposite: #call: ]

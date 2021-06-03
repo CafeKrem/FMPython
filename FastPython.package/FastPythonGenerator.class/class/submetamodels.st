@@ -1,3 +1,3 @@
 accessing
 submetamodels
-	^ { FASTMetamodelGenerator . FamixPythonGenerator }
+	^ { FASTMetamodelGenerator  }

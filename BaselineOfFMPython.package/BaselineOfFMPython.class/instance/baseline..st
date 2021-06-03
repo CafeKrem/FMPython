@@ -12,6 +12,6 @@ baseline: spec
 				baseline: 'PythonParser'
 				with: [ spec repository: 'github://SmaCCRefactoring/SmaCC' ].
 			spec
-				baseline: 'FASTPharo'
+				baseline: 'FAST'
 				with:
-					[ spec repository: 'github://moosetechnology/FAST-Pharo/src' ] ]
+					[ spec repository: 'github://enwiro/FAST:Migrate-to-traits/src' ] ]

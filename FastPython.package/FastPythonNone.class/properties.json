@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTNullPointerLiteral",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTNullPointerLiteral classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "FastPythonNone",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTNullPointerLiteral",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }

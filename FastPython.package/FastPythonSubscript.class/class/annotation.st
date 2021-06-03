@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #Subscript super: #FASTExpression>
+	<FMClass: #Subscript super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

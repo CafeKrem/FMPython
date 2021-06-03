@@ -1,7 +1,7 @@
 accessing
 message
-	"Relation named: #message type: #FASTExpression opposite: #assert"
+	"Relation named: #message type: #FASTTExpression opposite: #assert"
 
 	<generated>
-	<FMProperty: #message type: #FASTExpression opposite: #assert>
+	<FMProperty: #message type: #FASTTExpression opposite: #assert>
 	^ self attributeAt: #message ifAbsent: [ nil ]

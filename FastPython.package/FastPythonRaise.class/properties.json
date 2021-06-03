@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTStatement",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTStatement classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#exception => FMOne type: #FastPythonException opposite: #raise"
 	],
 	"name" : "FastPythonRaise",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTStatement",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }

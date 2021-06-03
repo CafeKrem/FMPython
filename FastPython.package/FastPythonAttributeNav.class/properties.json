@@ -1,13 +1,13 @@
 {
-	"classtraitcomposition" : "FastPythonAssignedTarget classTrait",
+	"classtraitcomposition" : "FASTTExpression classTrait + FastPythonAssignedTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#attributeName => FMProperty"
 	],
 	"name" : "FastPythonAttributeNav",
 	"commentStamp" : "",
-	"super" : "FASTExpression",
-	"traitcomposition" : "FastPythonAssignedTarget",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTExpression + FastPythonAssignedTarget",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

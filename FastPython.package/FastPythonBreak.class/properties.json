@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTStatement",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTStatement classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "FastPythonBreak",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTStatement",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }

@@ -1,7 +1,7 @@
 accessing
 left
-	"Relation named: #left type: #FASTExpression opposite: #binOp"
+	"Relation named: #left type: #FASTTExpression opposite: #binOp"
 
 	<generated>
-	<FMProperty: #left type: #FASTExpression opposite: #binOp>
+	<FMProperty: #left type: #FASTTExpression opposite: #binOp>
 	^ self attributeAt: #left ifAbsent: [ nil ]

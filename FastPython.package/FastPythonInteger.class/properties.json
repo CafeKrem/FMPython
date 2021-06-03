@@ -1,11 +1,15 @@
 {
+	"classtraitcomposition" : "FASTTLiteral classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"#value => FMProperty"
+	],
+	"name" : "FastPythonInteger",
 	"commentStamp" : "",
-	"super" : "FASTLiteral",
-	"category" : "FastPython-Entities",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTLiteral",
+	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "FastPythonInteger",
-	"type" : "normal"
+	"category" : "FastPython-Entities"
 }

@@ -1,8 +1,8 @@
 accessing
 body
-	"Relation named: #body type: #FASTStatement opposite: #classDeclaration"
+	"Relation named: #body type: #FASTTStatement opposite: #classDeclaration"
 
 	<generated>
 	<derived>
-	<FMProperty: #body type: #FASTStatement opposite: #classDeclaration>
+	<FMProperty: #body type: #FASTTStatement opposite: #classDeclaration>
 	^ self attributeAt: #body ifAbsentPut: [ FMMultivalueLink on: self opposite: #classDeclaration: ]

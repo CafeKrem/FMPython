@@ -1,7 +1,7 @@
 accessing
 body
-	"Relation named: #body type: #FASTExpression opposite: #lambda"
+	"Relation named: #body type: #FASTTExpression opposite: #lambda"
 
 	<generated>
-	<FMProperty: #body type: #FASTExpression opposite: #lambda>
+	<FMProperty: #body type: #FASTTExpression opposite: #lambda>
 	^ self attributeAt: #body ifAbsent: [ nil ]

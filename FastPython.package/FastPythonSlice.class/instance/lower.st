@@ -1,7 +1,7 @@
 accessing
 lower
-	"Relation named: #lower type: #FASTExpression opposite: #slice"
+	"Relation named: #lower type: #FASTTExpression opposite: #slice"
 
 	<generated>
-	<FMProperty: #lower type: #FASTExpression opposite: #slice>
+	<FMProperty: #lower type: #FASTTExpression opposite: #slice>
 	^ self attributeAt: #lower ifAbsent: [ nil ]

@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTExpression",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTExpression classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"#items => FMMany type: #FastPythonJoinedStringItem opposite: #joinedStr"
 	],
 	"name" : "FastPythonJoinedStr",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTExpression",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }

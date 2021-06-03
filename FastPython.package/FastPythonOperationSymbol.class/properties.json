@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"#binOp => FMOne type: #FastPythonBinOp opposite: #op",
+		"#unOp => FMOne type: #FastPythonUnOp opposite: #op"
+	],
+	"name" : "FastPythonOperationSymbol",
+	"type" : "normal"
+}

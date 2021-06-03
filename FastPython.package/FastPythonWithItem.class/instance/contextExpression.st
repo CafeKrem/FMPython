@@ -1,7 +1,7 @@
 accessing
 contextExpression
-	"Relation named: #contextExpression type: #FASTExpression opposite: #withItem"
+	"Relation named: #contextExpression type: #FASTTExpression opposite: #withItem"
 
 	<generated>
-	<FMProperty: #contextExpression type: #FASTExpression opposite: #withItem>
+	<FMProperty: #contextExpression type: #FASTTExpression opposite: #withItem>
 	^ self attributeAt: #contextExpression ifAbsent: [ nil ]

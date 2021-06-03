@@ -1,7 +1,7 @@
 meta
 annotation
 
-	<FMClass: #None super: #FASTNullPointerLiteral>
+	<FMClass: #None super: #FastPythonEntity>
 	<package: #FastPython>
 	<generated>
 	^self

@@ -1,15 +1,13 @@
 {
-	"classtraitcomposition" : "FMXPythonScopable classTrait",
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"category" : "FastPython-Entities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"#comprehensionExpression => FMOne type: #FastPythonComprehensionExpression opposite: #comprehension"
 	],
 	"name" : "FastPythonComprehension",
-	"commentStamp" : "",
-	"super" : "FastPythonEntity",
-	"traitcomposition" : "FMXPythonScopable",
-	"type" : "normal",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"category" : "FastPython-Entities"
+	"type" : "normal"
 }

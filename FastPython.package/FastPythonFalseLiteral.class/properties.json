@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTBooleanLiteral",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTBooleanLiteral classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "FastPythonFalseLiteral",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTBooleanLiteral",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }

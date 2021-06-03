@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "FASTExpression",
-	"category" : "FastPython-Entities",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "FASTTExpression classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "FastPythonLambda",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "FastPythonEntity",
+	"traitcomposition" : "FASTTExpression",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "FastPython-Entities"
 }
