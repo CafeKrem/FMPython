@@ -14,4 +14,4 @@ baseline: spec
 			spec
 				baseline: 'FAST'
 				with:
-					[ spec repository: 'github://enwiro/FAST:Migrate-to-traits/src' ] ]
+					[ spec repository: 'github://moosetechnology/FAST:master/src' ] ]
